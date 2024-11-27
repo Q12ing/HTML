@@ -1,0 +1,40 @@
+#wrap {}
+#wrap header {}
+#wrap header > a {}
+#wrap header a img {}
+#wrap header nav {}
+#wrap header nav ul {}
+#wrap header nav ul li {}
+#wrap header nav ul li a {}
+#wrap header .right_menu {}
+#wrap header .right_menu > a {}
+#wrap header .right_menu ul {}
+#wrap header .right_menu ul li {}
+#wrap header .right_menu ul li a {}
+/* ======================================================메인 */
+#wrap main {}
+#wrap main .path {}
+#wrap main .path a {}
+#wrap main .path img {}
+#wrap main .path em {}
+#wrap main h1 {}
+#wrap main > p {}
+#wrap main .bg {}
+#wrap main .bg ul {}
+#wrap main .bg ul li {}
+#wrap main .bg ul li img {}
+#wrap main .bg ul li p {}
+#wrap main .bg ul li p h2 {}
+/* =====================================================푸터 */
+#wrap footer {}
+#wrap footer .ft_left {}
+#wrap footer .ft_left .ft-menu {}
+#wrap footer .ft_left .ft-menu a {}
+#wrap footer .ft_left .ft-menu a em {}
+#wrap footer .ft_left .ft-menu a img {}
+#wrap footer .ft_left address {}
+#wrap footer .ft_left address em {}
+#wrap footer .ft_left address p {}
+#wrap footer .ft_right {}
+#wrap footer .ft_right a {}
+#wrap footer .ft_right a img {}
