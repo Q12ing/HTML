@@ -1,32 +1,50 @@
-#wrap {}
-#wrap header {}
+#wrap { background-color:aqua; }
+#wrap header { background-color:lime; }
 #wrap header > a {}
 #wrap header a img {}
 #wrap header nav {}
 #wrap header nav ul {}
 #wrap header nav ul li {}
 #wrap header nav ul li a {}
-#wrap header .right_menu {}
+#wrap header .right_menu { background-color:pink; }
 #wrap header .right_menu > a {}
 #wrap header .right_menu ul {}
 #wrap header .right_menu ul li {}
 #wrap header .right_menu ul li a {}
 /* ======================================================메인 */
-#wrap main {}
-#wrap main .path {}
+#wrap main { background-color:yellow;}
+#wrap main .path { text-align:right; padding:10px 80px 10px 0px; background-color:#f9f9f9; font-size:0.88em; letter-spacing:-0.02em; color:#555; }
 #wrap main .path a {}
-#wrap main .path img {}
-#wrap main .path em {}
-#wrap main h1 {}
-#wrap main > p {}
-#wrap main .bg {}
-#wrap main .bg ul {}
-#wrap main .bg ul li {}
+#wrap main .path img { margin:0 12px 0 12px; }
+#wrap main .path em { font-weight:600; }
+#wrap main h1 { background-color:coral; text-align:center; margin:80px 0 25px 0; font-size:3.13rem; font-weight:700; letter-spacing:-0.02em; }
+#wrap main > p { text-align:center; margin-bottom:50px; font-size:1.19rem; font-weight:500; letter-spacing:-0.02em; }
+#wrap main .bg { background-color:#f9f9f9; padding:70px 0 70px 0; }
+#wrap main .bg ul {
+    width:1140px; margin:0 auto 70px;
+
+}
+/* ==================================== food, concession, export */
+#wrap main .bg .right {
+    background-color:red;
+}
+#wrap main .bg .right li:nth-child(1) { margin-right:20px; }
+#wrap main .bg .right li:nth-child(2) p:nth-of-type(2) { margin-top:30px; letter-spacing:-0.01em; line-height:1.5; color:#555; width:358px }
+/* =========================================== store, service */
+#wrap main .bg .left {
+    background-color:orange;
+    text-align:right;
+}
+#wrap main .bg .left li:nth-child(2) { margin-left:20px; }
+#wrap main .bg .left li:nth-child(1) p:nth-of-type(2) { margin-top:30px; letter-spacing:-0.01em; line-height:1.5; color:#555; width:358px }
+/* ======================끝 */
+#wrap main .bg ul li { display:inline-block; }
+#wrap main .bg ul li .number { font-size:6.25rem; font-weight:700; letter-spacing:-0.05em; color:rgba(0,0,0,0.1);}
 #wrap main .bg ul li img {}
 #wrap main .bg ul li p {}
-#wrap main .bg ul li p h2 {}
+#wrap main .bg ul li h2 { font-size:1.88rem; font-weight:600; letter-spacing:-0.02em; }
 /* =====================================================푸터 */
-#wrap footer {}
+#wrap footer { background-color:lime; }
 #wrap footer .ft_left {}
 #wrap footer .ft_left .ft-menu {}
 #wrap footer .ft_left .ft-menu a {}
