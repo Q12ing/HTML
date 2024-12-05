@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="./style/reset.css" rel="stylesheet">
+    <link href="./style/login_w.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <h1>Welcome back</h1>
+        <p>Welcome back! Please enter your details.</p>
+        <form action="#" method="post" id="signIn">
+            <fieldset>
+                <legend>로그인 페이지</legend>
+                <dl class="mainLogin">
+                    <dt class="title">Email</dt>
+                    <dd><input type="email" name="userEmail" required placeholder="Enter your email or id"> </dd>
+                    <dt class="title">Password</dt>
+                    <dd><input type="password" name="userPassword" required placeholder="Enter your Password"></dd>
+                    <dt class="title">Forgot password</dt>
+                    <dd><button type="submit" class="loginBtn">Login</button></dd>
+                    <dd><button type="button" class="signBtn">Sign in with Google</button></dd>
+                </dl>
+            </fieldset>
+            <p>Don't have on account? <a href="#">Sign up for free</a></p>
+        </form>
+    </div>
+</body>
+</html>
