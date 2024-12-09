@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN | spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link rel="icon" href="./images/spotify_logo.png" type="image/x-icon">
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/spotify.css" rel="stylesheet">
+    <style>
+        /* 속성선택자연습용 (주로 input에서 많이 사용) */
+        /* input[name^=user] {background-color:aqua;} */
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/logo.svg" alt="spotify"></a></h1>
+        <div class="tab_menu">
+            <a href="#" class="active">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+        <div class="tab_wrap">
+            <!-- SIGN IN 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="inFrm">
+                <ul>
+                    <li><input type="text" name="user_name" placeholder="Username" required></li>
+                    <li><input type="password" name="user_pw" placeholder="Password" required></li>
+                </ul>
+                <div class="stay_in">
+                    <input type="checkbox" name="login_stay" value="stay_on" id="stay_on">
+                    <label for="stay_on">stay signed in</label>
+                </div>
+                <p class="btn"><button type="submit" class="sign_in_btn">SIGN IN</button></p>
+                <a href="#" class="forget_pw">Forget password ?</a>
+            </form>
+            <!-- SIGN UP 클릭 시 출력 내용 -->
+            <form action="#" method="post" id="upFrm">
+                <div class="id_wrap content">
+                    <ul>
+                        <li class="id date"><input type="text" name="id" placeholder="Username" maxlength="12" required></li>
+                        <li class="dup_btn"><button type="button">Duplication</button></li>
+                    </ul>
+                    <p class="sub_txt">4-12 characters/English lowercase letters (number combination available)</p>
+                </div>
+                <div class="pw_wrap content">
+                    <ul>
+                        <li class="pw date"><input type="password" name="pw" placeholder="Password" maxlength="20" required></li>
+                        <li class="pw_check date"><input type="password" name="pw_check" placeholder="Password Check" maxlength="20" required></li>
+                    </ul>
+                    <p class="sub_txt">8-20 characters/a combination of two or more upper case letters, lower case letters, numbers, and special characters</p>
+                </div>
+                <div class="email_wrap content">
+                    <p class="email date"><input type="email" name="email" placeholder="example" required></p>
+                    <p>@</p>
+                    <p>
+                        <select name="email_menu" class="email_menu">
+                            <option value="naver">naver.com</option>
+                            <option value="google">gmail.com</option>
+                            <option value="kakao">kakao.com</option>
+                            <option value="daum">daum.net</option>
+                            <option value="hanmail">hanmail.com</option>
+                            <option value="nate">nate.com</option>
+                            <option value="hotmail">hotmail.com</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="phone_number_wrap content">
+                    <ul>
+                        <li class="phone date"><input type="number" name="phone_number" required></li>
+                        <li class="dup_btn"><button type="button">Certif</button></li>
+                    </ul>
+                    <p class="sub_txt">To protect your account more safely, please sign up and proceed with email authentication at [My Information > Modify Member Information]</p>
+                </div>
+                <p class="btn"><button type="submit" class="sign_up_btn">SIGN UP</button></p>
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>
