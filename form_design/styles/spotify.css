@@ -2,7 +2,7 @@ body {background-color:#222;}
 main {
     width:500px;
     /* 부모의 너비값 고정이 되어 있을 경우 그 자식, 자손 중 블록에 해당하는 모든 요소는 부모의 너비만큼(w:100%) 자동으로 크기를 인식한다.*/
-    margin:97px auto 0; 
+    margin:97px auto 0; padding-bottom:100px;
 }
 main h1 {text-align:center; margin:0 0 87px;}
 main h1 a {}
@@ -65,22 +65,22 @@ main .tab_wrap #inFrm .forget_pw {
 /* Sign up 클릭 시 나오는 내용 스타일 */
 /* 공용선택자 */
 main .tab_wrap #upFrm {} /* {display:none;} */
-main .tab_wrap #upFrm .content {background-color:aqua;
-    margin-bottom:32px;
-}
+main .tab_wrap #upFrm .content {margin-bottom:32px;}
 main .tab_wrap #upFrm .content ul {}
 main .tab_wrap #upFrm .content ul li {}
-main .tab_wrap #upFrm .content ul .date {background-color:brown;
-    border-radius:36.5px; padding:15px 40px; margin-bottom:10px;
+main .tab_wrap #upFrm .content ul .date {background-color:#fff;;
+    margin-bottom:10px; border-radius:36.5px; padding:15px 40px;
 }
-main .tab_wrap #upFrm .content ul li input {background-color:pink;
-    width:100%
+main .tab_wrap #upFrm .content ul li input {width:100%}
+main .tab_wrap #upFrm .content ul li input::placeholder {letter-spacing:-0.02em; color:#aaa;}
+main .tab_wrap #upFrm .content ul .dup_btn {float:right;}
+main .tab_wrap #upFrm .content ul .dup_btn button {
+    background-color:#aaa; color:#fff; letter-spacing:-0.02em;
+    width:130px; padding:20px 23.5px; border-radius:36.5px;
 }
-main .tab_wrap #upFrm .content ul .dup_btn {}
-main .tab_wrap #upFrm .content ul .dup_btn button {}
-main .tab_wrap #upFrm .content .sub_txt { background-color:red;
+main .tab_wrap #upFrm .content .sub_txt {
     font-size:0.81rem; letter-spacing:-0.02em; line-height:1.3;
-    color:#ccc; padding:0 40px;
+    color:#ccc; padding:0 40px; clear:both;
 }
 /* ==================================================username */
 main .tab_wrap #upFrm .id_wrap {}
@@ -90,9 +90,8 @@ main .tab_wrap #upFrm .id_wrap ul li {
 }
 main .tab_wrap #upFrm .id_wrap ul .id {width:354px; float:left;}
 main .tab_wrap #upFrm .id_wrap ul .id input {}
-main .tab_wrap #upFrm .id_wrap ul .name_dup_btn {
-    float:right;}
-main .tab_wrap #upFrm .id_wrap ul .name_dup_btn button {background-color:orange;}
+main .tab_wrap #upFrm .id_wrap ul .dup_btn {}
+main .tab_wrap #upFrm .id_wrap ul .dup_btn button {}
 main .tab_wrap #upFrm .id_wrap p {}
 /* ==================================================password */
 main .tab_wrap #upFrm .pw_wrap {}
@@ -105,11 +104,18 @@ main .tab_wrap #upFrm .pw_wrap ul .pw_check input {}
 main .tab_wrap #upFrm .pw_wrap .sub_txt {}
 /* ==================================================email */
 main .tab_wrap #upFrm .email_wrap {}
+main .tab_wrap #upFrm .email_wrap > p {display:inline-block;}
 main .tab_wrap #upFrm .email_wrap .email {}
-main .tab_wrap #upFrm .email_wrap .email p {}
-main .tab_wrap #upFrm .email_wrap .email input {}
-main .tab_wrap #upFrm .email_wrap p:nth-child(2) {}
-main .tab_wrap #upFrm .email_wrap .email_menu {}
+main .tab_wrap #upFrm .email_wrap p:nth-child(2) {color:#fff;}
+main .tab_wrap #upFrm .email_wrap .email input {
+    border-radius:36.5px; width:240px; padding:15px 40px;
+}
+main .tab_wrap #upFrm .email_wrap .email input::placeholder {color:#aaa;}
+main .tab_wrap #upFrm .email_wrap p:nth-child(2) {margin:0 5px;}
+main .tab_wrap #upFrm .email_wrap .email_menu {
+    border-radius:36.5px; width:225px; height:53px; padding:0 40px;
+    background:#fff url(../images/arrow_forward_down.png) no-repeat 90% center;)
+}
 main .tab_wrap #upFrm .email_wrap .email_menu option {}
 /* ==================================================phone number */
 main .tab_wrap #upFrm .phone_number_wrap {}
@@ -122,4 +128,7 @@ main .tab_wrap #upFrm .phone_number_wrap ul .phone_dup_btn button {}
 main .tab_wrap #upFrm .phone_number_wrap .sub_txt {}
 /* ============================================================== */
 main .tab_wrap #upFrm .btn {}
-main .tab_wrap #upFrm .btn .sign_up_btn {}
+main .tab_wrap #upFrm .btn .sign_up_btn {
+    background-color:#aaa; color:#fff; border-radius:36.5px;
+    padding:25px 0; width:100%;
+}
