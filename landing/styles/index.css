@@ -1,23 +1,57 @@
 /* ========================= ★전체 공통 디자인★ */
 #wrap {}
-#wrap .container {}
+#wrap .container {
+    background-position:center;
+    background-size:cover;
+}
+#wrap .container .contents {
+    max-width:1250px; min-width:320px; 
+    margin:0 auto;
+}
+#wrap .container .main_title { /* 대제목 70 스타일 */
+    font-size:4.38rem; color:#fff;
+    text-align:center; line-height:1.3; letter-spacing:-0.02em;
+}
+#wrap .container .main_title span {font-weight:700;}
+#wrap .container .sponsor_btn {
+    background:linear-gradient(90deg, #fe9300, #ff7300);
+    color:#fff; border-radius:50px; padding:15px 70px;
+    font-size:2.13rem; line-height:1.2; font-weight:700;
+}
+#wrap .container .sponsor_btn:hover {
+    background:linear-gradient(-90deg, #fe9300, #ff7300) 
+}
+#wrap .container .sponsor_btn img {width:32px; position:relative; top:3px;}
+#wrap .container .sponsor_q_btn {
+    background-color:#050505; color:#fff;
+    border-radius:30px; padding:10px 30px;
+    font-size:1.63rem; line-height:1.2;
+    display:flex; flex-flow:row nowrap;
+    align-items:center;
+}
+#wrap .container .sponsor_q_btn:hover {
+    box-shadow:0 0 10px rgba(255,255,255,0.5)
+}
+#wrap .container .sponsor_q_btn img {width:24px}
+#wrap .container .sponsor_q_btn img:first-child {width:24px; margin-right:10px;}
+#wrap .container .sponsor_q_btn img:last-child {width:24px; margin-left:10px;}
 /* ========================= 1행 제목+후원 */
 #wrap .bg1 {
     background-image:url(../images/bg1.png);
-    background-position:center;
-    background-size:cover;
+    background-attachment:fixed; /* 기본값 scroll */
 }
 #wrap .bg1 .gradient {
     /* background:linear-gradient(각도deg, 색상, 색상 색상위치%, 색상) */
     background:linear-gradient(transparent,rgba(0,0,0,0.6) 69%);
 }
-#wrap .bg1 .gradient .contents {background-color:rgba(0,0,0,0.5);
-    height:100vh; width:1250px; margin:0 auto;
+#wrap .bg1 .gradient .contents {
+    height:150vh;
     display:flex;
     flex-flow:column nowrap;
     align-items:center;
     justify-content:center;
 }
+#wrap .bg1 .gradient .contents > * {margin-bottom:100px;}
 #wrap .bg1 .gradient .contents h1:nth-child(1) {align-self:flex-start; width:89px;}
 #wrap .bg1 .gradient .contents h1:nth-child(1) a {}
 #wrap .bg1 .gradient .contents h1:nth-child(1) a img {width:100%;}
@@ -25,11 +59,53 @@
 #wrap .bg1 .gradient .contents h1:nth-child(2) span  {}
 #wrap .bg1 .gradient .contents .sponsor_btn {}
 #wrap .bg1 .gradient .contents .sponsor_btn img {}
-#wrap .bg1 .gradient .contents .sponsor_q_btn {align-self:flex-end;}
+#wrap .bg1 .gradient .contents .sponsor_q_btn {align-self:flex-end; margin:0;}
 #wrap .bg1 .gradient .contents .sponsor_q_btn img {}
 #wrap .bg1 .gradient .contents .sponsor_q_btn img:first-child {}
 #wrap .bg1 .gradient .contents .sponsor_q_btn img:last-child {}
 /* ========================= 2행 퀴즈+참여 */
+#wrap .bg2 {
+    background-image:url(../images/quiz_bg.png);
+}
+#wrap .bg2 .contents {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    padding:150px 0;
+}
+#wrap .bg2 .contents .quiz_contents {}
+#wrap .bg2 .contents .quiz_contents h2 {
+    font-size:3.44rem; color:#fff; line-height:1.2; letter-spacing:-0.01em;
+    margin-bottom:38px; padding-left:210px;
+}
+#wrap .bg2 .contents .quiz_contents p {
+    font-size:1.25rem; color:#fff; line-height:1.7;
+    margin-bottom:13px;
+}
+#wrap .bg2 .contents .quiz_contents form {
+    display:flex; flex-flow:column nowrap;
+
+}
+#wrap .bg2 .contents .quiz_contents form label {margin-bottom:20px;}
+#wrap .bg2 .contents .quiz_contents form label:last-child {margin:0;}
+#wrap .bg2 .contents .quiz_contents form label input[name^=quiz] {}
+#wrap .bg2 .contents .quiz_contents form label input[name^=quiz]+span {
+    background:url(../images/quiz_check_n.png) no-repeat left center;
+    font-size:1.25rem; color:#fff; padding-left:52px;
+}
+#wrap .bg2 .contents .quiz_contents form label input[name^=quiz]:checked+span {
+    background:url(../images/quiz_check_y.png) no-repeat left center;
+}
+#wrap .bg2 .contents .quiz_contents form .answer_btn  {
+    background-color:#050505; color:#fff;
+    width:450px; border-radius:30px; padding:10px 0; 
+}
+#wrap .bg2 .contents .quiz_contents form .answer_btn:hover {box-shadow:0 0 10px rgba(255,255,255,0.5)}
+#wrap .bg2 .contents .quiz_status {
+    display:flex; flex-flow:column nowrap;
+    justify-content:center;
+}
+#wrap .bg2 .contents .quiz_status img {width:500px; margin-bottom:20px;}
+#wrap .bg2 .contents .quiz_status span {display:block; color:#fff; font-size:1.25rem; text-align:right;}
 /* ========================= 3행 동영상 */
 /* ========================= 4행 빙하 50% 감소 */
 /* ========================= 5행 빙하 인류재앙3 */
