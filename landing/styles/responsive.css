@@ -3,6 +3,7 @@
     /* ================공통 선택자 + 1행 반응형디자인(tablet) */
     #wrap .container > * {padding:0 80px;}
     #wrap .container .main_title {font-size:3.13rem;}
+    #wrap .container h2 {font-size:2.50rem;}
     #wrap .container .sponsor_btn {
         font-size:1.38rem;
         padding:15px 0; width:270px;
@@ -11,17 +12,37 @@
     #wrap .container .sponsor_q_btn {font-size:1.25rem;}
     #wrap .bg1 .gradient .contents .sponsor_q_btn img:first-child {display:none;}
     /* ===============2행 반응형디자인(tablet) */
+    #wrap .bg2 .contents {padding:150px 80px;}
+    #wrap .bg2 .contents .quiz_contents h2 {font-size:2.43rem; margin:0 0 56px 222px;}
+    #wrap .bg2 .contents .quiz_contents form .answer_btn  {width:300px;}
+    #wrap .bg2 .contents .quiz_status img {width:316px;}
     /* ===============3행 반응형디자인(tablet) */
     /* ===============4행 반응형디자인(tablet) */
-    /* ===============5행 반응형디자인(tablet) */
     /* ===============6행 반응형디자인(tablet) */
+    #wrap .bg4 .contents h2,
+    #wrap .bg6 .contents h2 {font-size:font-size:2.50rem;}
+    #wrap .bg4 .contents h2+p,
+    #wrap .bg6 .contents h2+p {font-size:1.38rem; font-weight:400;}
+    /* ===============5행 반응형디자인(tablet) */
     /* ===============7행 반응형디자인(tablet) */
     /* ===============8행 반응형디자인(tablet) */
     /* ===============9행 반응형디자인(tablet) */
     /* ===============10행 반응형디자인(tablet) */
 }/* w1250 end */
+@media screen and (max-width:900px) {
+    /* ===============2행 반응형디자인(900) */
+    #wrap .bg2 .contents {flex-flow:column nowrap; align-items:center;}
+    #wrap .bg2 .contents .quiz_contents {margin-bottom:50px;}
+    #wrap .bg2 .contents .quiz_contents h2 {margin-left:130px;}
+    #wrap .bg2 .contents .quiz_contents p {font-size:1.00rem;}
+    #wrap .bg2 .contents .quiz_contents form label input[name^=quiz]+span {font-size:0.88rem;}
+    #wrap .bg2 .contents .quiz_contents form .answer_btn {align-self:center;}
+    #wrap .bg2 .contents .quiz_status span {font-size:0.88rem;}
+}
+/* w769~w900 end */
 @media screen and (max-width:768px) {
     /* ================공통 선택자 + 1행 반응형디자인(mobile) */
+    #wrap .container .contents {padding:70px 0;}
     #wrap .container > * {padding:0 15px;}
     #wrap .container .main_title {font-size:1.88rem;}
     #wrap .container .sponsor_btn {
@@ -31,14 +52,24 @@
     #wrap .bg1 .gradient .contents > * {margin-bottom:65px;}
     #wrap .bg1 .gradient .contents h1:nth-child(1) {width:40px;}
     #wrap .bg1 .gradient .contents .sponsor_btn img {width:21px; text-align:center; position:relative; top:0;}
-    #wrap .bg1 .gradient .contents .sponsor_q_btn {font-size:0.88rem; align-self:center;}
+    #wrap .bg1 .gradient .contents .sponsor_q_btn {font-size:0.88rem; padding:15px 70px; align-self:center;}
     /* ===============2행 반응형디자인(mobile) */
     /* ===============3행 반응형디자인(mobile) */
+    #wrap .bg3 .contents h2 {font-size:1.63rem;}
+    #wrap .bg3 .contents iframe {margin:40px 0;}
+    #wrap .bg3 .contents iframe {height:300px;}
     /* ===============4행 반응형디자인(mobile) */
-    /* ===============5행 반응형디자인(mobile) */
     /* ===============6행 반응형디자인(mobile) */
+    #wrap .bg4,
+    #wrap .bg6 {padding:0 70px;}
+    #wrap .bg4 .contents h2,
+    #wrap .bg6 .contents h2 {font-size:1.63rem;}
+    #wrap .bg4 .contents h2+p,
+    #wrap .bg6 .contents h2+p {font-size:0.81rem; font-weight:400; line-height:1.7; margin:22px 0;}
+    /* ===============5행 반응형디자인(mobile) */
+    
     /* ===============7행 반응형디자인(mobile) */
     /* ===============8행 반응형디자인(mobile) */
     /* ===============9행 반응형디자인(mobile) */
     /* ===============10행 반응형디자인(mobile) */
-}/* w768 end */
+}/* w320~w768 end */
