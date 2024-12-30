@@ -11,13 +11,55 @@
 <body>
     <div class="h_bg">
         <header>
-            <h1><a href="#"><img src="#" alt="메이크업 포에버"></a></h1>
+            <h1><a href="#"><img src="./images/logo.png" alt="메이크업 포에버"></a></h1>
             <div class="h_right">
                 <div class="h_top">
                     <div class="search">
-                        <a href="#"><img src="#" alt="검색"></a>
+                        <a href="#"><img src="./images/search.png" alt="검색"></a>
                         <!-- 검색 클릭 시 실행되는 팝업(아래) -->
-                        <div class="search_popup"></div>
+                        <div class="search_popup">
+                            <a href="#" class="close_btn"><img src="./images/close.png" alt="창 닫기"></a>
+                            <form action="#" method="get" id="searchFrm">
+                                <input type="search" name="user_search" id="user_search" placeholder="검색어를 입력하세요">
+                                <button type="button" id="search_btn"><img src="./images/search_18px.png" alt="검색"></button>
+                            </form>
+                            <h2>실시간 인기 검색어</h2>
+                            <ol class="search_list">
+                                <li>
+                                    <span class="num">1</span>
+                                    <a href="#" class="keywords">쿠션</a>
+                                    <span class="rating"><img src="./images/rating_up.png" alt="순위 상승"></span>
+                                </li>
+                                <li>
+                                    <span class="num">2</span>
+                                    <a href="#" class="keywords">파운데이션</a>
+                                    <span class="rating"><img src="./images/rating_down.png" alt="순위 하락"></span>
+                                </li>
+                                <li>
+                                    <span class="num">3</span>
+                                    <a href="#" class="keywords">아이섀도우</a>
+                                    <span class="rating"><img src="./images/rating_normal.png" alt="평준화"></span>
+                                </li>
+                                <li>
+                                    <span class="num">4</span>
+                                    <a href="#" class="keywords">아이브로우</a>
+                                    <span class="rating"><img src="./images/rating_down.png" alt="순위 하락"></span>
+                                </li>
+                                <li>
+                                    <span class="num">5</span>
+                                    <a href="#" class="keywords">립스틱</a>
+                                    <span class="rating"><img src="./images/rating_normal.png" alt="평준화"></span>
+                                </li>
+                            </ol>
+                            <h2>추천 키워드</h2>
+                            <div class="keywords_recommend">
+                                <a href="#">프라이머</a>
+                                <a href="#">립틴트</a>
+                                <a href="#">파운데이션</a>
+                                <a href="#">파우더</a>
+                                <a href="#">아이브로우</a>
+                            </div>
+                        </div>
                     </div>
                     <a href="#">로그인</a>
                     <a href="#">회원가입</a>
@@ -36,19 +78,72 @@
                         <a href="#">LIPS</a>
                         <!-- nav 마우스 오버 시 출력 서브메뉴(아래) -->
                         <div class="sub_bg">
-                            <button type="button" class="sub_close"><img src="#" alt=""></button>
-                            <div class="search_wrap">
-                                <form action="#" method="get">
-                                    <input type="text" name="search" placeholder="검색어를 입력하세요">
-                                </form>
-                                <button type="button" class="search_close"><img src="#" alt=""></button>
+                            <div class="sub_contents">
+                                <ul class="depth1">
+                                    <li><a href="#">BEST</a></li>
+                                    <li class="active"><a href="#">FACE</a></li>
+                                    <li><a href="#">EYES</a></li>
+                                    <li><a href="#">LIPS</a></li>
+                                </ul>
+                                <!-- 2단계 서브메뉴 -->
+                                <div class="depth2">
+                                    <ul class="sub sub1">
+                                        <li><a href="#">파운데이션</a></li>
+                                        <li><a href="#">프라이머</a></li>
+                                        <li><a href="#">블러셔</a></li>
+                                        <li><a href="#">컨실러</a></li>
+                                        <li><a href="#">파우더</a></li>
+                                    </ul>
+                                    <ul class="sub sub2">
+                                        <li><a href="#">아이라이너</a></li>
+                                        <li><a href="#">아이섀도우</a></li>
+                                        <li><a href="#">아이브로우</a></li>
+                                    </ul>
+                                    <ul class="sub sub3">
+                                        <li><a href="#">립스틱</a></li>
+                                        <li><a href="#">립라이너</a></li>
+                                        <li><a href="#">립케어</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </nav>
                 </div>
             </div>
         </header>
     </div>
+    <main>
+        <!-- 1행 광고배너 -->
+        <!-- 각 배너 civ, 배너들 묶는 큰 그룹 div, 공용 버튼, 스크롤 등 태그-->
+        <div class="slides_wrap">
+            <div class="slides_container">
+                <div class="slide slide1">
+                    <!-- 광고모델 사진은 bg처리 -->
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr1_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps.">
+                            <a href="#" class="bnr_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                <!-- 광고모델 사진은 bg처리 -->
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr2_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps.">
+                            <a href="#" class="bnr_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 배너 이전, 다음 제어 버튼 -->
+            <a href="#" class="prev_btn"><img src="./images/bnr_prev.png" alt="이전 광고보기"></a>
+            <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt="다음 광고보기"></a>
+            <!-- 배너 진행 상태 스크롤 -->
+            <div class="scroll_bg">
+                <div class="scrollbar"></div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

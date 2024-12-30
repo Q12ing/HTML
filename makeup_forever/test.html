@@ -4,16 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메포 연습용</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        main {}
+        main .slides_wrap {
+            position:relative;
+            height:650px;
+        }
+        main .slides_wrap .slides_container {
+            height:100%;
+        }
+        /* 공용선택자 */
+        main .slides_wrap .slides_container .slide {
+            height:100%
+        }
+        main .slides_wrap .slides_container .slide .contents {
+            width:1400px; margin:0 auto;
+            overflow:hidden;
+        }
+        main .slides_wrap .slides_container .slide .contents .title {
+            width:50%; float:right; padding-top:203px;
+        }
+        main .slides_wrap .slides_container .slide .contents .title img {}
+        main .slides_wrap .slides_container .slide .contents .title .bnr_link {
+            font-weight:300; color:#000; background-color:none; border:2px solid #000;
+            margin-top:41px; border-radius:5px;
+            padding:10px 15px; display:block; width:min-content;
+        }
+        main .slides_wrap .slides_container .slide .contents .title .bnr_link:hover {
+            color:#fff; background-color:#000; border:2px solid #000;
+        }
+        /* 개별선택자 */
+        main .slides_wrap .slides_container .slide1 {
+            background-image:url(./images/bnr1_bg.jpg);
+        }
+        main .slides_wrap .slides_container .slide1 .contents {}
+        main .slides_wrap .slides_container .slide1 .contents .title {}
+        main .slides_wrap .slides_container .slide1 .contents .title img {}
+        main .slides_wrap .slides_container .slide1 .contents .title .bnr_link {}
+        main .slides_wrap .slides_container .slide2 {
+            background-image:url(./images/bnr2_bg.jpg);
+            display:none;
+        }
+        main .slides_wrap .slides_container .slide2 .contents {}
+        main .slides_wrap .slides_container .slide2 .contents .title {}
+        main .slides_wrap .slides_container .slide2 .contents .title img {}
+        main .slides_wrap .slides_container .slide2 .contents .title .bnr_link {}
+        /* 버튼 */
+        main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
+            position:absolute; top:45%;
+        }
+        main .slides_wrap .prev_btn {left:200px;}
+        main .slides_wrap .prev_btn img {}
+        main .slides_wrap .next_btn {right:200px;}
+        main .slides_wrap .next_btn img {}
+        main .slides_wrap .scroll_bg {
+            background-color:#ccc;
+            width:1400px; height:2px;
+            position:relative; bottom:34px; margin:0 auto;
+        }
+        main .slides_wrap .scroll_bg .scrallbar {
+            background-color:#111;
+            width:200px; height:100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="sub_bg">
-        <button type="button" class="sub_close"><img src="#" alt=""></button>
-        <div class="search_wrap">
-            <form action="#" method="get">
-                <input type="text" name="search" placeholder="검색어를 입력하세요">
-            </form>
-            <button type="button" class="search_close"><img src="#" alt=""></button>
+    <main>
+        <!-- 1행 광고배너 -->
+        <!-- 각 배너 civ, 배너들 묶는 큰 그룹 div, 공용 버튼, 스크롤 등 태그-->
+        <div class="slides_wrap">
+            <div class="slides_container">
+                <div class="slide slide1">
+                    <!-- 광고모델 사진은 bg처리 -->
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr1_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps.">
+                            <a href="#" class="bnr_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                <!-- 광고모델 사진은 bg처리 -->
+                    <div class="contents">
+                        <div class="title">
+                            <img src="./images/bnr2_txt.png" alt="new the profession all mascara the new volumizing lash tool our best pro technques for all. in 2 easy steps.">
+                            <a href="#" class="bnr_link">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 배너 이전, 다음 제어 버튼 -->
+            <a href="#" class="prev_btn"><img src="./images/bnr_prev.png" alt="이전 광고보기"></a>
+            <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt="다음 광고보기"></a>
+            <!-- 배너 진행 상태 스크롤 -->
+            <div class="scroll_bg">
+                <div class="scrollbar"></div>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
 </html>
