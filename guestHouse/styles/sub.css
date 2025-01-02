@@ -19,12 +19,14 @@
 }
 #wrap header nav .tab_menu li:last-child a {margin:0;}
 #wrap header nav .tab_menu li .active {color:#fff;}
+/* 메인시작---------------------------- */
 #wrap main {}
 #wrap main .container {}
 #wrap main .container .txt {}
 #wrap main .container .main_bnr {}
 #wrap main .container .main_bnr h1 {}
 #wrap main .container .main_bnr p {}
+#wrap main .container {}
 
 /* footer 시작 */
 #wrap footer {background-color:#697901;}

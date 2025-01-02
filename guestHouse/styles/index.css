@@ -1,9 +1,9 @@
 #wrap {}
 #wrap header {background-color:rgba(0,0,0,0.3);
-    width:100%; height:100px; padding:0 80px; position:fixed; 
+    width:100%; height:100px; padding:0 80px; position:fixed; left:0; top:0;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
-    align-items:center; z-index:200;
+    align-items:center; z-index:900;
 }
 #wrap header h1 {}
 #wrap header h1 a {}
@@ -21,17 +21,19 @@
 #wrap header nav .tab_menu li .active {color:#fff;}
 /* 공통 선택자 */
 #wrap main {}
-#wrap main .container {width:100%;}
+#wrap main .container {/* width:100% 삭제 */}
 #wrap main .container .contents {padding-top:95px;}
-#wrap main .container .contents .txt { width:1260px; margin:0 auto;}
+#wrap main .container .contents .txt {width:1260px; margin:0 auto;}
 #wrap main .container .contents .txt .title {
     display:flex; margin-bottom:50px;
     flex-flow:column nowrap; align-items:center; justify-content:center;}
-#wrap main .container .contents .txt .title .title_top {position:relative; font-size:1.25rem; font-weight:500; line-height:1.5; letter-spacing:-0.02em;}
-#wrap main .container .contents .txt .title .bar span {
-    display:inline-block; background-color:#697901;
+#wrap main .container .contents .txt .title .title_top {
+    position:relative;
+    font-size:1.25rem; font-weight:500; line-height:1.5; letter-spacing:-0.02em;}
+#wrap main .container .contents .txt .title .title_top::after {
+    display:block; content:''; background-color:#697901;
     width:50px; height:3px; 
-    position:relative; top:0; margin:15px 0;
+    position:relative; left:0; top:0; margin:15px auto;
 }
 #wrap main .container .contents .txt .title p {font-size:1.5rem; letter-spacing:-0.02em;}
 #wrap main .container .contents .txt .title p span {font-weight:600;}
@@ -68,19 +70,21 @@
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
 }
-#wrap main .container .room_list .txt .room_list_wrap li {border-radius:10px; width:300px;}
+#wrap main .container .room_list .txt .room_list_wrap li {border-radius:10px; width:calc((100% - 60px) / 4);}
 #wrap main .container .room_list .txt .room_list_wrap li a {}
-#wrap main .container .room_list .txt .room_list_wrap li a img {margin-bottom:20px;}
+#wrap main .container .room_list .txt .room_list_wrap li a > .room_pic {margin-bottom:20px;}
+#wrap main .container .room_list .txt .room_list_wrap li a > .room_pic img {width:100%;}
 #wrap main .container .room_list .txt .room_list_wrap li a h3 {
     color:#697901;
     font-size:1.38rem; font-weight:600; letter-spacing:-0.02em;
+    margin-bottom:5px;
 }
 #wrap main .container .room_list .txt .room_list_wrap li a p {line-height:1.5; letter-spacing:-0.02em;}
 #wrap main .container .room_list .txt .room_list_wrap li a p span {color:#444;}
-#wrap main .container .room_list .txt .room_list_wrap li a p:nth-of-type(1) {margin:5px 0 15px 0;}
+#wrap main .container .room_list .txt .room_list_wrap li a p:last-child {margin:15px 0 0;}
 /* 2행 주변관광지 소개 */
 #wrap main .container .travel {}
-#wrap main .container .travel .txt {width:100vw;}
+#wrap main .container .travel .txt {width:100%;}
 #wrap main .container .travel .txt .title {}
 #wrap main .container .travel .txt .title h2 {}
 #wrap main .container .travel .txt .title h2 .bar span {}
@@ -138,34 +142,29 @@
 #wrap main .container .location .txt .title p span {}
 #wrap main .container .location .txt .location_wrap {}
 #wrap main .container .location .txt .location_wrap p {}
-#wrap main .container .location .txt .location_wrap p img {border-radius:10px; margin-bottom:15px;}
+#wrap main .container .location .txt .location_wrap p img {width:100%; border-radius:10px; margin-bottom:15px;}
 #wrap main .container .location .txt .location_wrap ul {
     display:flex; flex-flow:row nowrap;
     justify-content:space-between;
 }
 #wrap main .container .location .txt .location_wrap ul li {
-    border-radius:10px; overflow:hidden; width:415px;
+    border-radius:10px; overflow:hidden; width:calc((100% - (8px * 2)) / 3);
     display:flex; flex-flow:column nowrap; text-align:center;
 }
-#wrap main .container .location .txt .location_wrap ul li > * {
-    display:flex; flex-flow:column nowrap;
-    justify-content:center; align-items:center;
-}
+#wrap main .container .location .txt .location_wrap ul li {}
 #wrap main .container .location .txt .location_wrap ul li .location_up {
-    background-color:#697901; font-weight:600; color:#fff; width:415px; height:50px;
+    background-color:#697901; font-weight:600; color:#fff; padding:14px 0;
     font-size:1.38rem;
 }
 #wrap main .container .location .txt .location_wrap ul li .location_down {
     background-color:#F5F5F5; height:170px;
-    font-size:1.13rem;
-}
-#wrap main .container .location .txt .location_wrap ul li .location_down p {
-    letter-spacing:-0.02em; line-height:1.5;
-    display:flex; flex-flow:column wrap;
+    font-size:1.13rem; display:flex; flex-flow:column wrap;
     justify-content:center; 
 }
-#wrap main .container .location .txt .location_wrap ul li .location_down span {
-    font-size:1.25rem; font-weight:600; line-height:1.0; margin-bottom:10px;
+#wrap main .container .location .txt .location_wrap ul li .location_down p {
+    letter-spacing:-0.02em; line-height:1.5;}
+#wrap main .container .location .txt .location_wrap ul li .location_down p span {
+    display:block; font-size:1.25rem; font-weight:600; line-height:1.0; margin-bottom:20px;
 }
 /* footer 시작 */
 #wrap footer {background-color:#697901;}
@@ -174,11 +173,11 @@
     justify-content:space-between; align-items:center;
     padding:0 80px 0;
 }
-#wrap footer .inner address {
+#wrap footer .inner address {}
+#wrap footer .inner address p {
     color:#fff;
-    font-size:0.88rem; line-height:1.5; letter-spacing:-0.02em;
-}
-#wrap footer .inner address span {font-weight:600;}
+    font-size:0.88rem; line-height:1.5; letter-spacing:-0.02em;}
+#wrap footer .inner address p span {font-weight:600;}
 #wrap footer .inner .f_right {}
 #wrap footer .inner .f_right a {}
 #wrap footer .inner .f_right a img {}
