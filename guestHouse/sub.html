@@ -18,8 +18,8 @@
                 <ul class="tab_menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#" class="active">Rooms</a></li>
-                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#" class="active">Reservation</a></li>
                     <li><a href="#">Travel</a></li>
                     <li><a href="#">Customer</a></li>
                 </ul>
@@ -27,15 +27,15 @@
         </header>
         <main>
             <div class="container">
-                <div class="txt main_bnr">
+                <div class="main_bnr">
                     <h1>Reservation</h1>
                     <p>객실안내</p>
                 </div>
             </div>
             <div class="container">
                 <div class="txt">
-                    <div class="rooms_preview">
-                        <ul class="rooms_tap_menu">
+                    <div class="preview">
+                        <ul class="top_menu">
                             <li><a href="#" class="active">포사이드방</a></li>
                             <li><a href="#">우월순방</a></li>
                             <li><a href="#">배유지방</a></li>
@@ -44,15 +44,59 @@
                             <li><a href="#">유수마방</a></li>
                             <li><a href="#">서서평방</a></li>
                         </ul>
-                        <div class="rooms_preview_wrap">
-                            <p><img src="./images/rooms_preview1.png" alt="포사이드방 미리보기"></p>
-                            <ul>
-                                <li><img src="./images/rooms_preview2.png" alt="포사이드방 미리보기"></li>
-                                <li><img src="./images/rooms_preview3.png" alt="포사이드방 미리보기"></li>
-                            </ul>
+                        <div class="preview_wrap">
+                            <div class="room_pic forside">
+                                <p class="pv_left"><img src="./images/room_price_1.jpg" alt=""></p>
+                                <ul class="pv_right">
+                                    <li><img src="./images/room_price_2.jpg" alt=""></li>
+                                    <li><img src="./images/room_price_3.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="room_pic woowalsoon">
+                                <p class="pv_left"><img src="./images/room_price_1.jpg" alt=""></p>
+                                <ul class="pv_right">
+                                    <li><img src="./images/room_price_2.jpg" alt=""></li>
+                                    <li><img src="./images/room_price_3.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="room_pic baeyooji">
+                                <p class="pv_left"><img src="./images/room_price_1.jpg" alt=""></p>
+                                <ul class="pv_right">
+                                    <li><img src="./images/room_price_2.jpg" alt=""></li>
+                                    <li><img src="./images/room_price_3.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="room_pic woowen">
+                                <p class="pv_left"><img src="./images/room_price_1.jpg" alt=""></p>
+                                <ul class="pv_right">
+                                    <li><img src="./images/room_price_2.jpg" alt=""></li>
+                                    <li><img src="./images/room_price_3.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="room_pic seoroduk">
+                                <p class="pv_left"><img src="./images/room_price_1.jpg" alt=""></p>
+                                <ul class="pv_right">
+                                    <li><img src="./images/room_price_2.jpg" alt=""></li>
+                                    <li><img src="./images/room_price_3.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="room_pic yoosuma">
+                                <p class="pv_left"><img src="./images/room_price_1.jpg" alt=""></p>
+                                <ul class="pv_right">
+                                    <li><img src="./images/room_price_2.jpg" alt=""></li>
+                                    <li><img src="./images/room_price_3.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="room_pic seoseopyeong">
+                                <p class="pv_left"><img src="./images/room_price_1.jpg" alt=""></p>
+                                <ul class="pv_right">
+                                    <li><img src="./images/room_price_2.jpg" alt=""></li>
+                                    <li><img src="./images/room_price_3.jpg" alt=""></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="rooms_price">
-                            <table>
+                        <table class="room_price">
+                            <thead>
                                 <tr>
                                     <th scope="col">객실명</th>
                                     <th scope="col">유형</th>
@@ -61,6 +105,8 @@
                                     <th scope="col">준성수기</th>
                                     <th scope="col">성수기</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <th scope="row">포사이드방</th>
                                     <td>1층(2인실)침대</td>
@@ -117,13 +163,13 @@
                                     <td>100,000원</td>
                                     <td>100,000원</td>
                                 </tr>
-                            </table>
-                            <div class="table_txt">
-                                <p>인원추가:1인 10,000원 별도 발생</p>
-                                <p>* 비수기/준성수기/성수기 요금 동일 적용</p>
-                            </div>
+                            </tbody>
+                        </table>
+                        <div class="table_txt">
+                            <p>인원추가:1인 10,000원 별도 발생</p>
+                            <p>* 비수기/준성수기/성수기 요금 동일 적용</p>
                         </div>
-                        <div class="rooms_notice">
+                        <div class="notice">
                             <div class="notice_right">
                                 <h2>확인 및 기타사항</h2>
                                 <ul>
@@ -139,9 +185,9 @@
                             <div class="notice_left">
                                 <h2>입실 및 퇴실 안내</h2>
                                 <ul>
-                                    <li><span>입실시간 : 오후 3시</span></li>
-                                    <li><span>퇴실시간 : 오전12시</span></li>
-                                    <li>22시 이후 입실하실 경우 펜션으로 사전 연락 부탁드립니다.</li>
+                                    <li><span>- 입실시간 : 오후 3시</span></li>
+                                    <li><span>- 퇴실시간 : 오전12시</span></li>
+                                    <li>- 22시 이후 입실하실 경우 펜션으로 사전 연락 부탁드립니다.</li>
                                 </ul>
                             </div>
                         </div>
@@ -152,11 +198,11 @@
         <footer>
             <div class="inner">
                 <address>
-                    <span>주소 : 503-822 광주광역시 남구 양림동 230-1</span><br>
-                    전화 : 062-682-0976, 휴대전화 : 010-2056-4832, 팩스 : 062-653-0978<br>
-                    Copyright &copy; 호랑가시나무언덕 게스트하우스. All right reserved.<br>
-                    법인(단체명) : (주)아트주, 대표자 : 정헌기, 사업자등록번호 : 408-81-88664<br>
-                    통신판매신고번호 : 2015-광주남구-0127, 사업자 주소 : 광주광역시 남구 제중로 47번길 11(양림동, 2층)
+                    <p><span>주소 : 503-822 광주광역시 남구 양림동 230-1</span></p>
+                    <p>전화 : 062-682-0976, 휴대전화 : 010-2056-4832, 팩스 : 062-653-0978</p>
+                    <p>Copyright &copy; 호랑가시나무언덕 게스트하우스. All right reserved.</p>
+                    <p>법인(단체명) : (주)아트주, 대표자 : 정헌기, 사업자등록번호 : 408-81-88664</p>
+                    <p>통신판매신고번호 : 2015-광주남구-0127, 사업자 주소 : 광주광역시 남구 제중로 47번길 11(양림동, 2층)</p>
                 </address>
                 <div class="f_right">
                     <a href="#"><img src="./images/logo.png" alt="호랑가시나무언덕 게스트하우스"></a>

@@ -51,13 +51,16 @@
     background-color:rgba(0,0,0,0.6);
     position:absolute; left:0; top:0; z-index:100;
 }
+#wrap main .container .main_bnr > * 
+{color:#fff; position:relative; z-index:200; letter-spacing:-0.02em;
+}
 #wrap main .container .main_bnr h1 {
-    text-align:center; color:#fff; margin-bottom:60px; position:relative; z-index:200;
-    font-size:5.00rem; font-weight:600; line-height:1.3; letter-spacing:-0.02em;
+    text-align:center; margin-bottom:60px;
+    font-size:5.00rem; font-weight:600; line-height:1.3;
 }
 #wrap main .container .main_bnr p {
-    text-align:center; color:#fff; position:relative; z-index:200;
-    font-size:1.25rem; font-weight:500; line-height:1.5; letter-spacing:-0.02em;}
+    text-align:center;
+    font-size:1.25rem; font-weight:500; line-height:1.5;}
 /* 1행 방 소개 */
 #wrap main .container .room_list {background-color:#FEFFF5; padding-bottom:50px;}
 #wrap main .container .room_list .txt {}
