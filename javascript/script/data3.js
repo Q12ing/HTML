@@ -43,3 +43,16 @@ console.log(cat3);
 console.log(cat3.genter);
 console.log(cat3.age, cat3.color[0]);
 console.log(cat1.color.length);
+//cgv 영화 페이지 조사 기준 '하얼빈' 반복되는 데이터 조사 후 객체 생성하기
+const movie = {
+    nameKr : '하얼빈',
+    nameEn : 'HARBIN',
+    state : ['현재상영중','예매중'],
+    reservation : '21.5%',
+    director: '우민호'
+    actor : ['현빈','박정민','조우진','전여빈','박훈','유재명','릴리 프랭키','이동욱'],
+    genre : ['드라마','액션','다큐'],
+    basics : 
+    release : 2024.12.24
+    ]
+};
