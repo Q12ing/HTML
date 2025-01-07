@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리바트몰</title>
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="h_top_bg"> <!-- 전체너비 배경 -->
+            <div class="h_top"> <!-- 컨텐츠너비 1400 -->
+                <h1><a href="./index.html"><img src="./images/logo_livart.png" alt="현대 리바트몰"></a></h1>
+                <div class="h_user">
+                    <div class="search">
+                        <form action="#" method="get">
+                            <input type="search" placeholder="검색어를 입력해주세요">
+                        </form>
+                        <a href="#"><img src="./images/search.png" alt="search"></a>
+                    </div>
+                    <div class="login_join_cart">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">장바구니</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h_bottom_bg">
+            <div class="h_bottom"><!-- 컨텐츠너비 1400 -->
+                <a href="#"><img src="./images/category.png" alt="메뉴 전체보기"></a>
+                <!-- 전체보기 클릭시 출력 서브메뉴 올곳 (제작X) -->
+                <nav>
+                    <a href="#">가구</a>
+                    <a href="#">리모델링</a>
+                    <a href="#">오피스</a>
+                    <a href="#">세계가구</a>
+                    <a href="#">공방</a>
+                    <a href="#">중고가구</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 1행 광고배너 -->
+        <div class="slides_wrap">
+            <div class="slides_container">
+                <div class="slide"> <!-- 이미지 bg처리 -->
+                    <div class="content">
+                        <div class="slide_txt">
+                            <p class="sub_txt">The Modular Furniture System Series                            </p>
+                            <h2>FIT 315</h2>
+                            <p>변하지 않는 가치를 담은 하이엔드 가구<br>리바트만의 최고급 기술과 디테일을 만나보세요</p>
+                            <a href="#">MORE<img src="./images/arrow_right.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 배너 이전, 다음 제어 버튼 -->
+            <a href="#" class="prev_btn"><img src="./images/bnr_prev.png" alt="이전 광고보기"></a>
+            <a href="#" class="next_btn"><img src="./images/bnr_next.png" alt="다음 광고보기"></a>
+            <!-- 배너 진행 상태 스크롤 -->
+            <div class="scroll_bg">
+                <div class="scrollbar"></div>
+            </div>
+        </div>
+        <!-- 2행 상품진열 -->
+        <div class="container"> <!-- 풀너비 -->
+            <div class="contents product_wrap"> <!-- 컨텐츠너비 -->
+                <ul class="tap_menu">
+                    <li class="active"><a href="#">BEST</a></li>
+                    <li><a href="#">소파</a></li>
+                    <li><a href="#">식탁</a></li>
+                    <li><a href="#">침대/매트리스</a></li>
+                    <li><a href="#">서랍장</a></li>
+                    <li><a href="#">책상</a></li>
+                    <li><a href="#">의자</a></li>
+                    <li><a href="#">키즈/주니어</a></li>
+                </ul>
+                <div class="product_box">
+                    <div class="product_row">
+                        <div class="product">
+                            <p><img src="./images/product_001.jpg" alt=""></p>
+                            <p class="brand">리바트</p>
+                            <h3>[아울렛] 꼼므 1200 아이책상의자세트</h3>
+                            <p><del>313,000원</del></p>
+                            <div class="price_favorite">
+                                <em>52%</em>
+                                <strong>151,500</strong>
+                                <span>원</span>
+                                <a href="#"><img src="./images/favorite.png" alt="찜하기"></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <p><img src="./images/product_002.jpg" alt=""></p>
+                            <p class="brand">리바트</p>
+                            <h3>브루트 4인 천연면피 소가죽 소파</h3>
+                            <p><del>1,530,000원</del></p>
+                            <div class="price_favorite">
+                                <em>15%</em>
+                                <strong>1,305,400</strong>
+                                <span>원</span>
+                                <a href="#"><img src="./images/favorite.png" alt="찜하기"></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <p><img src="./images/product_003.jpg" alt=""></p>
+                            <p class="brand">리바트</p>
+                            <h3>[아울렛] 꼼므 주니어 수납 슈퍼싱글침대 (매트, 가드 포함)</h3>
+                            <p><del>723,000원</del></p>
+                            <div class="price_favorite">
+                                <em>16%</em>
+                                <strong>608,200</strong>
+                                <span>원</span>
+                                <a href="#"><img src="./images/favorite.png" alt="찜하기"></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <p><img src="./images/product_004.jpg" alt=""></p>
+                            <p class="brand">리바트</p>
+                            <h3>로넌 1200 책상세트 플랩도어형</h3>
+                            <p><del>322,000원</del></p>
+                            <div class="price_favorite">
+                                <em>12%</em>
+                                <strong>248,300</strong>
+                                <span>원</span>
+                                <a href="#"><img src="./images/favorite.png" alt="찜하기"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_row">
+                        <div class="product">
+                            <p><img src="./images/product_001.jpg" alt=""></p>
+                            <p class="brand">리바트</p>
+                            <h3>[아울렛] 꼼므 1200 아이책상의자세트</h3>
+                            <p><del>313,000원</del></p>
+                            <div class="price_favorite">
+                                <em>52%</em>
+                                <strong>151,500</strong>
+                                <span>원</span>
+                                <a href="#"><img src="./images/favorite.png" alt="찜하기"></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <p><img src="./images/product_002.jpg" alt=""></p>
+                            <p class="brand">리바트</p>
+                            <h3>브루트 4인 천연면피 소가죽 소파</h3>
+                            <p><del>1,530,000원</del></p>
+                            <div class="price_favorite">
+                                <em>15%</em>
+                                <strong>1,305,400</strong>
+                                <span>원</span>
+                                <a href="#"><img src="./images/favorite.png" alt="찜하기"></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <p><img src="./images/product_003.jpg" alt=""></p>
+                            <p class="brand">리바트</p>
+                            <h3>[아울렛] 꼼므 주니어 수납 슈퍼싱글침대 (매트, 가드 포함)</h3>
+                            <p><del>723,000원</del></p>
+                            <div class="price_favorite">
+                                <em>16%</em>
+                                <strong>608,200</strong>
+                                <span>원</span>
+                                <a href="#"><img src="./images/favorite.png" alt="찜하기"></a>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <p><img src="./images/product_004.jpg" alt=""></p>
+                            <p class="brand">리바트</p>
+                            <h3>로넌 1200 책상세트 플랩도어형</h3>
+                            <p><del>322,000원</del></p>
+                            <div class="price_favorite">
+                                <em>12%</em>
+                                <strong>248,300</strong>
+                                <span>원</span>
+                                <a href="#"><img src="./images/favorite.png" alt="찜하기"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3행 오구가구 -->
+        <div class="container"> <!-- 풀너비 -->
+            <div class="contents oggg_wrap"> <!-- 컨텐츠너비 -->
+                <div class="oggg_title">
+                    <div class="oggg_left">
+                        <p class="title">중고 가구 거래를 더욱 손 쉽게, 오구가구</p>
+                        <p>오구가구는 여러분들이 쉽고 안전하게 중고가구 거래를 할 수 있도록 도와드리는 중고가구 전문 중개 플랫폼입니다.<br>
+                            중고가구 판매와 구매를 편리하게 한 곳에서 이용해보세요.</p>
+                    </div>
+                    <div class="oggg_right">
+                        <a href="#"><img src="./images/ogugagu_qr.jpg" alt=""></a>
+                        <p>앱 다운로드</p>
+                    </div>
+                </div>
+                <ul class="oggg_content">
+                    <li class="content1">
+                        <p><img src="./images/ogugagu_product_001.jpg" alt=""></p>
+                        <div class="txt">
+                            <p><span>오프라인 쇼핑, 이제 온라인에서</span></p>
+                            <p>리바트 상설매장, 해외홈퍼니싱 제품</p>
+                            <p>오구가구에서 24시간 상시 판매중!</p>
+                        </div>
+                    </li>
+                    <li class="content2">
+                        <p><img src="./images/ogugagu_product_002.jpg" alt=""></p>
+                        <div class="txt">
+                            <p><span>오구가구 이용가이드</span></p>
+                            <p>서비스 이용부터 혜택까지 간편하게</p>
+                            <p>초보자를 위한 완벽 가이드!</p>
+                        </div>
+                    </li>
+                    <li class="content3">
+                        <p><img src="./images/ogugagu_product_003.jpg" alt=""></p>
+                        <div class="txt">
+                            <p><span>이전설치 더 알뜰하게!</span></p>
+                            <p>중고거래 금액과 상관없이</p>
+                            <p>거래만 완료하면 이전설치 할인혜택을 드려요.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 4행 리바트로 꾸민 집 -->
+        <div class="container"> <!-- 풀너비 -->
+            <div class="contents insta_wrap"> <!-- 컨텐츠너비 -->
+                <div class="insta_livart">
+                    <div class="insta_title">
+                        <p><span># 리바트로 꾸민 집</span></p>
+                        <p>인스타그램 속 리바트 제품을 확인해 보세요!</p>
+                        <p>#리바트로꾸민우리집 혹은 @hyundailivart_official 태그를 통해 이미지를 업로드 하면 이곳에서 볼 수 있어요!</p>
+                    </div>
+                    <ul class="insta_content">
+                        <li>
+                            <a href="#"><img src="./images/insta_product_001.jpg" alt=""></a>
+                            <div class="icon">
+                                <p><img src="./images/instagram.png" alt=""> parksohyeoni</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/insta_product_002.jpg" alt=""></a>
+                            <div class="icon">
+                                <p><img src="./images/instagram.png" alt=""> parksohyeoni</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/insta_product_003.jpg" alt=""></a>
+                            <div class="icon">
+                                <p><img src="./images/instagram.png" alt=""> parksohyeoni</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/insta_product_004.jpg" alt=""></a>
+                            <div class="icon">
+                                <p><img src="./images/instagram.png" alt=""> parksohyeoni</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./images/insta_product_005.jpg" alt=""></a>
+                            <div class="icon">
+                                <p><img src="./images/instagram.png" alt=""> parksohyeoni</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="scroll_bg">
+                        <div class="scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 5열 공지사항 -->
+        <div class="container"> <!-- 풀너비 -->
+            <div class="contents notice_wrap"> <!-- 컨텐츠너비 -->
+                <div class="notice">
+                    <p><a href="#">공지사항<img src="./images/arrow_right.png" alt=""></a></p>
+                    <ul>
+                        <li>
+                            <p>[발표] 11월 베스트 포토리뷰 당첨자 안내</p>
+                            <p>2024.12.11</p>
+                        </li>
+                        <li>
+                            <p>[발표] 창립기념 경품 당첨자 안내</p>
+                            <p>2024.11.12</p>
+                        </li>
+                        <li>
+                            <p>[발표] 홈쇼핑 10월 광클절 기간 경품 안내 이벤트 당첨자 발표</p>
+                            <p>2024.11.10</p>
+                        </li>
+                        <li>
+                            <p>[발표] 10월 베스트 포토리뷰 당첨자 안내</p>
+                            <p>2024.11.01</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class=notice_nav>
+                    <div class="n_nav_top">
+                        <a href="#"><img src="./images/notice_inquiry.png" alt="">상품문의</a>
+                        <a href="#"><img src="./images/notice_delivery.png" alt="">배송문의</a>
+                        <a href="#"><img src="./images/notice_as.png" alt="">A/S예약</a>
+                    </div>
+                    <div class="n_nav_bottom">
+                        <a href="#"><img src="./images/notice_faq.png" alt="">FAQ</a>
+                        <a href="#"><img src="./images/notice_large_purchase.png" alt="">대량구매</a>
+                        <a href="#"><img src="./images/notice_custom_pay.png" alt="">맞춤결제</a>
+                    </div>
+                </div>
+                <div class="mystore_bnr">
+                    <div class="img_bg">
+                                            <p><em>마이스토어 등록 혜택</em></p>
+                    <p>결제 금액 3% 할인</p>
+                    <p><span>H.Point 통합회원 로그인 후 이용가능합니다.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container"><!-- 풀너비 -->
+            <div class="contents footer_wrap"><!-- 컨텐츠너비 -->
+                <div class="f_left">
+                    <ul class="f_top">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">운영/관리방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">경영이념</a></li>
+                        <li><a href="#">투자정보</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">제휴 및 대리점 개설 안내</a></li>
+                    </ul>
+                    <address>
+                        <div class="call">
+                            <h4>고객센터 1577-3332(유료)</h4>
+                            <ul>
+                                <li>T. 제휴/대리점 개설 문의 02-3480-8000</li>
+                                <li>M. livartcs@hyundailivart.co.kr</li>
+                            </ul>
+                        </div>
+                        <div class="address_copy">
+                            <p>상호명 : (주)현대리바트 | 대표 : 윤기철 | 본사 :  경기도 용인시 남사읍 경기동로 316 | 서울사무소 : 서울특별시 강남구 압구정로 201</p>
+                            <p>사업자등록번호 135-81-32239 사업자확인 | 통신판매업신고 2014-용인처인-00049 | 개인정보관리자 : 최재운 </p>
+                            <p>Copyright&copy; HYUNDAI LIVART Corporation. All Rights Reserved.</p>
+                        </div>
+                    </address>
+                </div>
+                <div class="f_right">
+                    <div class="family_site">
+                        <a href="#">FAMILY SITE <img src="./images/family_down_arrow.png" alt=""></a>
+                        <!-- 눌렀을 시 탭메뉴 들어오는 자리(제작X) -->
+                    </div>
+                    <a href="#"><img src="./images/footer_bi.png" alt="현대 리바트 몰"></a>
+                    <a href="#"><img src="./images/mark_ccm.png" alt="ccm 소비자중심 인증마크"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -207,7 +207,7 @@ main .slides_wrap .next_btn {right:200px;}
 main .slides_wrap .next_btn img {}
 main .slides_wrap .scroll_bg {
     background-color:#ccc;
-    max-width:1400px;; height:2px;
+    max-width:1400px; height:2px;
     position:relative; bottom:34px; margin:0 auto;
 }
 main .slides_wrap .scroll_bg .scrollbar {

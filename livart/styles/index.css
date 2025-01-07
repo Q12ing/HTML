@@ -1,0 +1,215 @@
+header {
+    width:100%;
+    position:fixed; left:0; top:0; z-index:999;
+}
+header .h_top_bg {background-color:#fff;}
+header .h_top_bg .h_top {width:1400px; height:80px; margin:0 auto;}
+header .h_top_bg .h_top {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
+header .h_top_bg .h_top h1 {}
+header .h_top_bg .h_top h1 a {}
+header .h_top_bg .h_top .h_user {
+    display:flex; flex-flow:row nowrap;
+}
+header .h_top_bg .h_top .h_user .search {
+    width:250px; display:flex; flex-flow:row nowrap; justify-content:space-between;
+    padding:5px 10px; border-bottom:1px solid #000;
+}
+header .h_top_bg .h_top .h_user .search form {}
+header .h_top_bg .h_top .h_user .search form input[type=search] {width:200px;}
+header .h_top_bg .h_top .h_user .search form input[type=search]::placeholder {
+    font-size:0.94rem; letter-spacing:-0.02em; color:#aaa;}
+header .h_top_bg .h_top .h_user .search a {margin-left:3px;}
+header .h_top_bg .h_top .h_user .search a img {}
+header .h_top_bg .h_top .h_user .login_join_cart {}
+header .h_top_bg .h_top .h_user .login_join_cart a {
+    font-size:0.94rem; letter-spacing:-0.02em; margin-left:20px;
+    position:relative; top:8px;
+}
+header .h_bottom_bg {background-color:#F9F9F9;
+    width:100%;
+}
+header .h_bottom_bg .h_bottom {
+    width:1400px; height:50px; margin:0 auto;
+    display:flex; flex-flow:row nowrap; align-items:center;
+    padding-left:5px;
+}
+header .h_bottom_bg .h_bottom > a {}
+header .h_bottom_bg .h_bottom > a img {}
+header .h_bottom_bg .h_bottom nav {display:inline-block; margin-left:60px;}
+header .h_bottom_bg .h_bottom nav a {
+    font-size:1.06rem; font-weight:500; letter-spacing:-0.02em;
+    margin-right:45px;
+}
+header .h_bottom_bg .h_bottom nav a:last-child {margin:0;}
+/* =======================================================공용선택자 */
+main {padding-top:130px;}
+main .container {width:100%;}
+main .container .contents {width:1400px; margin:0 auto;}
+/* =======================================================1행 배너 */
+main .slides_wrap {position:relative;}
+main .slides_wrap .slides_container {}
+main .slides_wrap .slides_container .slide {
+    background-image:url(../images/bnr.jpg);
+    height:670px;
+}
+main .slides_wrap .slides_container .slide {}
+main .slides_wrap .slides_container .slide .content {width:1400px; margin:0 auto; position:relative;}
+main .slides_wrap .slides_container .slide .content .slide_txt {
+    position:absolute; left:0; top:225px; width:100%;
+}
+main .slides_wrap .slides_container .slide .content .slide_txt .sub_txt {
+    font-size:1.25rem; letter-spacing:-0.02em;
+}
+main .slides_wrap .slides_container .slide .content .slide_txt h2 {
+    font-size:3.00rem; font-weight:700; letter-spacing:-0.02em;
+    margin:15px 0 32px;
+}
+main .slides_wrap .slides_container .slide .content .slide_txt p:nth-child(3) {
+    line-height:1.5; letter-spacing:-0.02em;
+    margin-bottom:55px;
+}
+main .slides_wrap .slides_container .slide .content .slide_txt a {
+    font-weight:600; letter-spacing:-0.02em;
+    padding:4px 8px; border-bottom:1px solid #000;
+}
+main .slides_wrap .slides_container .slide .content .slide_txt a img {
+    margin-left:10px; position:relative; top:3px;
+}
+main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
+    position:absolute; top:45%; opacity:0.05;}
+    main .slides_wrap .prev_btn:hover, main .slides_wrap .next_btn:hover {opacity:0.2;}
+main .slides_wrap .prev_btn {left:150px;}
+main .slides_wrap .prev_btn img {}
+main .slides_wrap .next_btn {right:150px;}
+main .slides_wrap .next_btn img {}
+main .slides_wrap .scroll_bg {
+    background-color:#ccc; width:1400px; height:2px;
+    position:relative; bottom:120px; margin:0 auto;
+}
+main .slides_wrap .scroll_bg .scrollbar {
+    background-color:#111; width:200px; height:100%;}
+    
+/* =======================================================2행 상품진열 */
+main .container .product_wrap {padding-top:70px;}
+main .container .product_wrap .tap_menu {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-around; margin-bottom:50px;
+}
+main .container .product_wrap .tap_menu li {
+    width:calc((100% - (30px * 7)) / 8);
+}
+main .container .product_wrap .tap_menu li a {
+    display:inline-block; text-align:center;
+    background-color:#fff; color:#555;
+    border:1px solid #aaa; border-radius:30px;
+    width:100%; padding:10px 0;
+}
+main .container .product_wrap .tap_menu .active {}
+main .container .product_wrap .tap_menu .active a {
+    background-color:#000;
+    border:1px solid #000;
+    color:#fff 
+}
+main .container .product_wrap .product_box {}
+main .container .product_wrap .product_box .product_row {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .container .product_wrap .product_box .product_row .product {
+}
+main .container .product_wrap .product_box .product_row .product p {width:calc((100% - (27px * 3) / 4));}
+main .container .product_wrap .product_box .product_row .product p img {width:100%;}
+main .container .product_wrap .product_box .product_row .product .brand {
+    font-size:0.94rem; color:#555; letter-spacing:-0.02em; margin:25px 0 0px; 
+}
+main .container .product_wrap .product_box .product_row .product h3 {
+    height:50px; font-size:1.06rem; font-weight:500; letter-spacing:-0.02em;
+}
+main .container .product_wrap .product_box .product_row .product p del {
+    color:#aaa; font-weight:500; letter-spacing:-0.02em;
+}
+main .container .product_wrap .product_box .product_row .product .price_favorite {overflow:hidden;}
+main .container .product_wrap .product_box .product_row .product .price_favorite em {
+    color:#DA074A; font-size:1.50rem; font-weight:600; letter-spacing:-0.04em; margin-bottom:5px;
+}
+main .container .product_wrap .product_box .product_row .product .price_favorite strong {
+    font-size:1.50rem; font-weight:600; letter-spacing:-0.04em;
+}
+main .container .product_wrap .product_box .product_row .product .price_favorite span {
+    font-size:1.06rem; font-weight:500; letter-spacing:-0.02em;
+}
+main .container .product_wrap .product_box .product_row .product .price_favorite a {float:right;}
+main .container .product_wrap .product_box .product_row .product .price_favorite a img {}
+/* =======================================================3행 오구가구 */
+main .container .oggg_wrap {}
+main .container .oggg_wrap .oggg_title {}
+main .container .oggg_wrap .oggg_title .oggg_left {}
+main .container .oggg_wrap .oggg_title .oggg_left .title {}
+main .container .oggg_wrap .oggg_title .oggg_left p {}
+main .container .oggg_wrap .oggg_title .oggg_right {}
+main .container .oggg_wrap .oggg_title .oggg_right a {}
+main .container .oggg_wrap .oggg_title .oggg_right a img {}
+main .container .oggg_wrap .oggg_title .oggg_right p {}
+main .container .oggg_wrap .oggg_content {}
+main .container .oggg_wrap .oggg_content li[class=^content] {}
+main .container .oggg_wrap .oggg_content li[class=^content] p {}
+main .container .oggg_wrap .oggg_content li[class=^content] p img {}
+main .container .oggg_wrap .oggg_content li[class=^content] .txt {}
+main .container .oggg_wrap .oggg_content li[class=^content] .txt p {}
+main .container .oggg_wrap .oggg_content li[class=^content] .txt p span {}
+/* =======================================================4행 리바트로 꾸민 집 */
+main .container .insta_wrap {}
+main .container .insta_wrap .insta_livart {}
+main .container .insta_wrap .insta_livart .insta_title {}
+main .container .insta_wrap .insta_livart .insta_title p {}
+main .container .insta_wrap .insta_livart .insta_title p span {}
+main .container .insta_wrap .insta_livart .insta_content {}
+main .container .insta_wrap .insta_livart .insta_content li {}
+main .container .insta_wrap .insta_livart .insta_content li a {}
+main .container .insta_wrap .insta_livart .insta_content li .icon {display:none;}
+main .container .insta_wrap .insta_livart .insta_content li .icon p {}
+main .container .insta_wrap .insta_livart .insta_content li .icon p img {}
+main .container .insta_wrap .insta_livart .scroll_bg {}
+main .container .insta_wrap .insta_livart .scroll_bg .scrollbar {}
+/* =======================================================5행 공지사항 */
+main .container .notice_wrap {}
+main .container .notice_wrap .notice {}
+main .container .notice_wrap .notice p {}
+main .container .notice_wrap .notice p a {}
+main .container .notice_wrap .notice p a img {}
+main .container .notice_wrap .notice ul {}
+main .container .notice_wrap .notice ul li {}
+main .container .notice_wrap .notice ul li p {}
+main .container .notice_wrap .notice_nav {}
+main .container .notice_wrap .notice_nav .n_nav_top {}
+main .container .notice_wrap .notice_nav .n_nav_top a {}
+main .container .notice_wrap .notice_nav .n_nav_top a img {}
+main .container .notice_wrap .notice_nav .n_nav_bottom {}
+main .container .notice_wrap .notice_nav .n_nav_bottom a {}
+main .container .notice_wrap .notice_nav .n_nav_bottom a img {}
+main .container .notice_wrap .mystore_bnr {}
+main .container .notice_wrap .mystore_bnr .img_bg {}
+main .container .notice_wrap .mystore_bnr .img_bg p {}
+main .container .notice_wrap .mystore_bnr .img_bg p em {}
+main .container .notice_wrap .mystore_bnr .img_bg p span {}
+/* =======================================================footer */
+main .container .footer_wrap {}
+main .container .footer_wrap .f_left {}
+main .container .footer_wrap .f_left .f_top {}
+main .container .footer_wrap .f_left .f_top li {}
+main .container .footer_wrap .f_left .f_top li a {}
+main .container .footer_wrap .f_left address {}
+main .container .footer_wrap .f_left address .call {}
+main .container .footer_wrap .f_left address .call h4 {}
+main .container .footer_wrap .f_left address .call h4 ul {}
+main .container .footer_wrap .f_left address .call h4 ul li {}
+main .container .footer_wrap .f_left address .call h4 ul li {}
+main .container .footer_wrap .f_left address .address_copy {}
+main .container .footer_wrap .f_left address .address_copy p {}
+main .container .footer_wrap .f_right {}
+main .container .footer_wrap .f_right .family_site {}
+main .container .footer_wrap .f_right .family_site a {}
+main .container .footer_wrap .f_right .family_site a img {}
+main .container .footer_wrap .f_right > a {}
+main .container .footer_wrap .f_right > a img {}
