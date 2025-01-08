@@ -95,7 +95,7 @@ main .slides_wrap .scroll_bg .scrollbar {
 main .container .product_wrap {padding-top:70px;}
 main .container .product_wrap .tap_menu {
     display:flex; flex-flow:row nowrap;
-    justify-content:space-around; margin-bottom:50px;
+    justify-content:space-around;
 }
 main .container .product_wrap .tap_menu li {
     width:calc((100% - (30px * 7)) / 8);
@@ -114,22 +114,23 @@ main .container .product_wrap .tap_menu .active a {
 }
 main .container .product_wrap .product_box {}
 main .container .product_wrap .product_box .product_row {
-    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    width:100%; display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
-main .container .product_wrap .product_box .product_row .product {
-}
-main .container .product_wrap .product_box .product_row .product p {width:calc((100% - (27px * 3) / 4));}
-main .container .product_wrap .product_box .product_row .product p img {width:100%;}
+main .container .product_wrap .product_box .product_row .product {width:calc((100% - (27px * 3)) / 4); margin-top:45px;}
+main .container .product_wrap .product_box .product_row .product > a {display:block;}
+main .container .product_wrap .product_box .product_row .product .top_img {margin-bottom:15px;}
+main .container .product_wrap .product_box .product_row .product .top_img img {width:100%;}
 main .container .product_wrap .product_box .product_row .product .brand {
-    font-size:0.94rem; color:#555; letter-spacing:-0.02em; margin:25px 0 0px; 
+    font-size:0.94rem; color:#555; letter-spacing:-0.02em;
 }
-main .container .product_wrap .product_box .product_row .product h3 {
-    height:50px; font-size:1.06rem; font-weight:500; letter-spacing:-0.02em;
+main .container .product_wrap .product_box .product_row .product .name {}
+main .container .product_wrap .product_box .product_row .product .name h3 {
+    height:40px; font-size:1.06rem; font-weight:500; line-height:1.3; letter-spacing:-0.02em; margin:10px 0 15px;
 }
 main .container .product_wrap .product_box .product_row .product p del {
-    color:#aaa; font-weight:500; letter-spacing:-0.02em;
+    color:#aaa; font-weight:500; letter-spacing:-0.02em; 
 }
-main .container .product_wrap .product_box .product_row .product .price_favorite {overflow:hidden;}
+main .container .product_wrap .product_box .product_row .product .price_favorite {overflow:hidden; margin-top:5px;}
 main .container .product_wrap .product_box .product_row .product .price_favorite em {
     color:#DA074A; font-size:1.50rem; font-weight:600; letter-spacing:-0.04em; margin-bottom:5px;
 }
@@ -142,22 +143,40 @@ main .container .product_wrap .product_box .product_row .product .price_favorite
 main .container .product_wrap .product_box .product_row .product .price_favorite a {float:right;}
 main .container .product_wrap .product_box .product_row .product .price_favorite a img {}
 /* =======================================================3행 오구가구 */
-main .container .oggg_wrap {}
-main .container .oggg_wrap .oggg_title {}
-main .container .oggg_wrap .oggg_title .oggg_left {}
-main .container .oggg_wrap .oggg_title .oggg_left .title {}
-main .container .oggg_wrap .oggg_title .oggg_left p {}
-main .container .oggg_wrap .oggg_title .oggg_right {}
-main .container .oggg_wrap .oggg_title .oggg_right a {}
-main .container .oggg_wrap .oggg_title .oggg_right a img {}
-main .container .oggg_wrap .oggg_title .oggg_right p {}
-main .container .oggg_wrap .oggg_content {}
-main .container .oggg_wrap .oggg_content li[class=^content] {}
-main .container .oggg_wrap .oggg_content li[class=^content] p {}
-main .container .oggg_wrap .oggg_content li[class=^content] p img {}
-main .container .oggg_wrap .oggg_content li[class=^content] .txt {}
-main .container .oggg_wrap .oggg_content li[class=^content] .txt p {}
-main .container .oggg_wrap .oggg_content li[class=^content] .txt p span {}
+main .container .title_bg {}
+main .container .title_bg .oggg_title {background-color:#F1F9FC;
+    width:1400px; margin:0 auto; padding:30px 10px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .container .title_bg .oggg_title p {line-height:1.5; letter-spacing:-0.02em;}
+main .container .title_bg .oggg_title .t_left {}
+main .container .title_bg .oggg_title .t_left .title {
+    font-size:1.63rem; font-weight:600; letter-spacing:-0.02em; margin-bottom:20px; color:#02597d;
+}
+main .container .title_bg .oggg_title .t_left .p {}
+main .container .title_bg .oggg_title .t_right {}
+main .container .title_bg .oggg_title .t_right a {}
+main .container .title_bg .oggg_title .t_right a img {}
+main .container .title_bg .oggg_title .t_right p {color:#02597d;}
+main .container .oggg_content {
+    width:1400px; margin:0 auto;
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+}
+main .container .oggg_content li[class^=content] {
+    border-radius:10px; overflow:hidden;
+}
+main .container .oggg_content li[class^=content] p {}
+main .container .oggg_content li[class^=content] p img {width:100%;}
+main .container .oggg_content li[class^=content] .txt {background-color:#F1F9FC; 
+    padding:20px 0; text-align:center;
+}
+main .container .oggg_content li[class^=content] .txt p:first-child {margin-bottom:10px;}
+main .container .oggg_content li[class^=content] .txt p {
+    font-size:0.94rem; line-height:1.3; letter-spacing:-0.02em; color:#555;
+}
+main .container .oggg_content li[class^=content] .txt p span {
+    font-size:1.25rem; font-weight:600; color:#02597d;
+}
 /* =======================================================4행 리바트로 꾸민 집 */
 main .container .insta_wrap {}
 main .container .insta_wrap .insta_livart {}
@@ -201,10 +220,10 @@ main .container .footer_wrap .f_left .f_top li {}
 main .container .footer_wrap .f_left .f_top li a {}
 main .container .footer_wrap .f_left address {}
 main .container .footer_wrap .f_left address .call {}
-main .container .footer_wrap .f_left address .call h4 {}
-main .container .footer_wrap .f_left address .call h4 ul {}
-main .container .footer_wrap .f_left address .call h4 ul li {}
-main .container .footer_wrap .f_left address .call h4 ul li {}
+main .container .footer_wrap .f_left address .call p {}
+main .container .footer_wrap .f_left address .call p ul {}
+main .container .footer_wrap .f_left address .call p ul li {}
+main .container .footer_wrap .f_left address .call p ul li {}
 main .container .footer_wrap .f_left address .address_copy {}
 main .container .footer_wrap .f_left address .address_copy p {}
 main .container .footer_wrap .f_right {}

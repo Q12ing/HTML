@@ -15,7 +15,7 @@ line-height:1.5; letter-spacing:-0.02em;
 ### 보조메뉴 15
 font-size:0.94rem; letter-spacing:-0.02em;
 ### 내용 15
-font-size:0.94rem; line-height:0.3; letter-spacing:-0.02em;
+font-size:0.94rem; line-height:1.3; letter-spacing:-0.02em;
 
 ### 블랙 : #000
 ### 진회색 : #555
