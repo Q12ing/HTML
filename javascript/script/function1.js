@@ -49,7 +49,7 @@ const btn2 = document.querySelector('#btn2');
 btn2.addEventListener ('click',function(){
     //3. 1+1 답을 입력받을 수 있는 질문 창 제공 후 답 받기
     let result = prompt('1+1에 대한 답을 쓰세요');
-    //4. 위 3에서 받은 값을 팝업찹ㅇ으로 다시 띄우기
+    //4. 위 3에서 받은 값을 팝업창으로 다시 띄우기
     alert(result);
 })
 

@@ -86,13 +86,13 @@ main .slides_wrap .next_btn {right:150px;}
 main .slides_wrap .next_btn img {}
 main .slides_wrap .scroll_bg {
     background-color:#ccc; width:1400px; height:2px;
-    position:relative; bottom:120px; margin:0 auto;
+    position:relative; bottom:54px; margin:0 auto;
 }
 main .slides_wrap .scroll_bg .scrollbar {
     background-color:#111; width:200px; height:100%;}
     
 /* =======================================================2행 상품진열 */
-main .container .product_wrap {padding-top:70px;}
+main .container .product_wrap {padding:70px 0 120px;}
 main .container .product_wrap .tap_menu {
     display:flex; flex-flow:row nowrap;
     justify-content:space-around;
@@ -143,23 +143,23 @@ main .container .product_wrap .product_box .product_row .product .price_favorite
 main .container .product_wrap .product_box .product_row .product .price_favorite a {float:right;}
 main .container .product_wrap .product_box .product_row .product .price_favorite a img {}
 /* =======================================================3행 오구가구 */
-main .container .title_bg {}
-main .container .title_bg .oggg_title {background-color:#F1F9FC;
-    width:1400px; margin:0 auto; padding:30px 10px;
+main .container .title_bg {background-color:#F1F9FC;}
+main .container .title_bg .oggg_title {
+    width:1400px; margin:0 auto; padding:30px 20px; margin-bottom:70px;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
 main .container .title_bg .oggg_title p {line-height:1.5; letter-spacing:-0.02em;}
 main .container .title_bg .oggg_title .t_left {}
 main .container .title_bg .oggg_title .t_left .title {
-    font-size:1.63rem; font-weight:600; letter-spacing:-0.02em; margin-bottom:20px; color:#02597d;
+    font-size:1.63rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:20px; color:#02597d;
 }
-main .container .title_bg .oggg_title .t_left .p {}
+main .container .title_bg .oggg_title .t_left p {color:#555;}
 main .container .title_bg .oggg_title .t_right {}
 main .container .title_bg .oggg_title .t_right a {}
 main .container .title_bg .oggg_title .t_right a img {}
-main .container .title_bg .oggg_title .t_right p {color:#02597d;}
+main .container .title_bg .oggg_title .t_right p {color:#02597d; font-weight:500;}
 main .container .oggg_content {
-    width:1400px; margin:0 auto;
+    width:1400px; margin:0 auto 70px;
     display:flex; flex-flow:row nowrap; justify-content:space-between;
 }
 main .container .oggg_content li[class^=content] {
@@ -178,11 +178,19 @@ main .container .oggg_content li[class^=content] .txt p span {
     font-size:1.25rem; font-weight:600; color:#02597d;
 }
 /* =======================================================4행 리바트로 꾸민 집 */
+main .container_insta {background-color:#F9F9F9;
+    padding:100px 0;
+}
 main .container .insta_wrap {}
 main .container .insta_wrap .insta_livart {}
-main .container .insta_wrap .insta_livart .insta_title {}
-main .container .insta_wrap .insta_livart .insta_title p {}
-main .container .insta_wrap .insta_livart .insta_title p span {}
+main .container .insta_wrap .insta_livart .insta_title {text-align:center;}
+main .container .insta_wrap .insta_livart .insta_title p:first-child {margin-bottom:15px;}
+main .container .insta_wrap .insta_livart .insta_title p {
+    letter-spacing:-0.02em; line-height:1.5; color:#555;
+}
+main .container .insta_wrap .insta_livart .insta_title p span {
+    font-size:2.0rem; font-weight:700; line-height:1.0; color:#000;
+}
 main .container .insta_wrap .insta_livart .insta_content {}
 main .container .insta_wrap .insta_livart .insta_content li {}
 main .container .insta_wrap .insta_livart .insta_content li a {}
