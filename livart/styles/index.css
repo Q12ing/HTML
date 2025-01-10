@@ -79,7 +79,7 @@ main .slides_wrap .slides_container .slide .content .slide_txt a img {
 }
 main .slides_wrap .prev_btn, main .slides_wrap .next_btn {
     position:absolute; top:45%; opacity:0.05;}
-    main .slides_wrap .prev_btn:hover, main .slides_wrap .next_btn:hover {opacity:0.2;}
+main .slides_wrap .prev_btn:hover, main .slides_wrap .next_btn:hover {opacity:0.2;}
 main .slides_wrap .prev_btn {left:150px;}
 main .slides_wrap .prev_btn img {}
 main .slides_wrap .next_btn {right:150px;}
@@ -168,7 +168,7 @@ main .container .oggg_content li[class^=content] {
 main .container .oggg_content li[class^=content] p {}
 main .container .oggg_content li[class^=content] p img {width:100%;}
 main .container .oggg_content li[class^=content] .txt {background-color:#F1F9FC; 
-    padding:20px 0; text-align:center;
+    padding:20px 0; text-align:center; position:relative; top:-2px;
 }
 main .container .oggg_content li[class^=content] .txt p:first-child {margin-bottom:10px;}
 main .container .oggg_content li[class^=content] .txt p {
@@ -181,9 +181,9 @@ main .container .oggg_content li[class^=content] .txt p span {
 main .container_insta {background-color:#F9F9F9;
     padding:100px 0;
 }
-main .container .insta_wrap {}
-main .container .insta_wrap .insta_livart {}
-main .container .insta_wrap .insta_livart .insta_title {text-align:center;}
+main .container .insta_wrap {background-color:yellow; width:100%;}
+main .container .insta_wrap .insta_livart {position:relative;}
+main .container .insta_wrap .insta_livart .insta_title {background-color:aqua; text-align:center;}
 main .container .insta_wrap .insta_livart .insta_title p:first-child {margin-bottom:15px;}
 main .container .insta_wrap .insta_livart .insta_title p {
     letter-spacing:-0.02em; line-height:1.5; color:#555;
@@ -191,14 +191,38 @@ main .container .insta_wrap .insta_livart .insta_title p {
 main .container .insta_wrap .insta_livart .insta_title p span {
     font-size:2.0rem; font-weight:700; line-height:1.0; color:#000;
 }
-main .container .insta_wrap .insta_livart .insta_content {}
-main .container .insta_wrap .insta_livart .insta_content li {}
+main .container .insta_wrap .insta_livart .insta_content {
+    padding:40px 0 40px; display:flex; flex-flow:row nowrap;
+    position:relative; left:-150px;
+}
+main .container .insta_wrap .insta_livart .insta_content li {margin-right:25px; position:relative;}
+main .container .insta_wrap .insta_livart .insta_content li:last-child {margin:0;}
 main .container .insta_wrap .insta_livart .insta_content li a {}
-main .container .insta_wrap .insta_livart .insta_content li .icon {display:none;}
-main .container .insta_wrap .insta_livart .insta_content li .icon p {}
-main .container .insta_wrap .insta_livart .insta_content li .icon p img {}
-main .container .insta_wrap .insta_livart .scroll_bg {}
-main .container .insta_wrap .insta_livart .scroll_bg .scrollbar {}
+/* ========마우스 올렸을 때 뜨는 인스타그램 아이디 */
+main .container .insta_wrap .insta_livart .insta_content li:hover .icon {display:inline-block;}
+main .container .insta_wrap .insta_livart .insta_content li .icon {
+    padding:7px 10px; border-radius:15px; background-color:#fff; display:none;
+    position:absolute; top:22px; left:22px;
+}
+main .container .insta_wrap .insta_livart .insta_content li .icon p {
+    letter-spacing:-0.02em;
+    position:relative; top:-4px;
+}
+main .container .insta_wrap .insta_livart .insta_content li .icon p img {position:relative; top:6px;}
+main .container .insta_wrap .insta_livart .scroll_bg {
+    width:1400px; height:2px; margin:0 auto; background-color:#ccc; 
+}
+main .container .insta_wrap .insta_livart .scroll_bg .scrollbar {
+    width:calc(100% / 5); height:100%; background-color:#000;
+}
+main .container .insta_wrap .insta_livart > a {}
+main .container .insta_wrap .insta_livart > a img {}
+main .container .insta_wrap .insta_livart .prev_btn:hover img,
+main .container .insta_wrap .insta_livart .next_btn:hover img {box-shadow:0 0 10px rgba(0,0,0,0.2);}
+main .container .insta_wrap .insta_livart .prev_btn {}
+main .container .insta_wrap .insta_livart .prev_btn img {}
+main .container .insta_wrap .insta_livart .next_btn {}
+main .container .insta_wrap .insta_livart .next_btn img {}
 /* =======================================================5행 공지사항 */
 main .container .notice_wrap {}
 main .container .notice_wrap .notice {}
