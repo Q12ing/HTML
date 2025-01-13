@@ -181,9 +181,9 @@ main .container .oggg_content li[class^=content] .txt p span {
 main .container_insta {background-color:#F9F9F9;
     padding:100px 0;
 }
-main .container .insta_wrap {background-color:yellow; width:100%;}
+main .container .insta_wrap {width:100%;}
 main .container .insta_wrap .insta_livart {position:relative;}
-main .container .insta_wrap .insta_livart .insta_title {background-color:aqua; text-align:center;}
+main .container .insta_wrap .insta_livart .insta_title {text-align:center;}
 main .container .insta_wrap .insta_livart .insta_title p:first-child {margin-bottom:15px;}
 main .container .insta_wrap .insta_livart .insta_title p {
     letter-spacing:-0.02em; line-height:1.5; color:#555;
@@ -202,7 +202,7 @@ main .container .insta_wrap .insta_livart .insta_content li a {}
 main .container .insta_wrap .insta_livart .insta_content li:hover .icon {display:inline-block;}
 main .container .insta_wrap .insta_livart .insta_content li .icon {
     padding:7px 10px; border-radius:15px; background-color:#fff; display:none;
-    position:absolute; top:22px; left:22px;
+    position:absolute; top:22px; left:18px;
 }
 main .container .insta_wrap .insta_livart .insta_content li .icon p {
     letter-spacing:-0.02em;
@@ -215,52 +215,96 @@ main .container .insta_wrap .insta_livart .scroll_bg {
 main .container .insta_wrap .insta_livart .scroll_bg .scrollbar {
     width:calc(100% / 5); height:100%; background-color:#000;
 }
-main .container .insta_wrap .insta_livart > a {}
+/* ===== */
+main .container .insta_wrap .insta_livart > a {position:absolute; top:55%; opacity:0.7;}
 main .container .insta_wrap .insta_livart > a img {}
-main .container .insta_wrap .insta_livart .prev_btn:hover img,
-main .container .insta_wrap .insta_livart .next_btn:hover img {box-shadow:0 0 10px rgba(0,0,0,0.2);}
-main .container .insta_wrap .insta_livart .prev_btn {}
+main .container .insta_wrap .insta_livart .prev_btn:hover,
+main .container .insta_wrap .insta_livart .next_btn:hover {opacity:1;}
+main .container .insta_wrap .insta_livart .prev_btn {left:150px;}
 main .container .insta_wrap .insta_livart .prev_btn img {}
-main .container .insta_wrap .insta_livart .next_btn {}
+main .container .insta_wrap .insta_livart .next_btn {right:150px;}
 main .container .insta_wrap .insta_livart .next_btn img {}
 /* =======================================================5행 공지사항 */
+main .container .notice_wrap {
+    padding:50px 0 70px;
+    display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;
+}
 main .container .notice_wrap {}
-main .container .notice_wrap .notice {}
-main .container .notice_wrap .notice p {}
-main .container .notice_wrap .notice p a {}
-main .container .notice_wrap .notice p a img {}
+main .container .notice_wrap .notice {
+    width:400px; 
+}
+main .container .notice_wrap .notice > a {
+    display:block; padding-bottom:7px; border-bottom:1px solid #000;
+    ont-size:1.25rem; font-weight:600; letter-spacing:-0.02em;
+}
+main .container .notice_wrap .notice > a img {float:right;}
 main .container .notice_wrap .notice ul {}
-main .container .notice_wrap .notice ul li {}
-main .container .notice_wrap .notice ul li p {}
+main .container .notice_wrap .notice ul li {margin-top:14px;}
+main .container .notice_wrap .notice ul li:first-child {margin-top:20px;}
+main .container .notice_wrap .notice ul li a {display:flex; flex-flow:row nowrap; justify-content:space-between;}
+main .container .notice_wrap .notice ul li a p:first-child {
+    width:290px; overflow:hidden; 
+}
+main .container .notice_wrap .notice ul li a p {
+    font-size:0.94rem; line-height:1.3; letter-spacing:-0.02em; color:#555;
+    text-overflow:ellipsis; white-space:nowrap;
+}
 main .container .notice_wrap .notice_nav {}
-main .container .notice_wrap .notice_nav .n_nav_top {}
+main .container .notice_wrap .notice_nav div[class^=n_nav] a {
+    background-color:#F5F5F5; display:inline-block;
+    padding:5px 10px; margin-right:15px; border-radius:10px; 
+}
+main .container .notice_wrap .notice_nav div[class^=n_nav] span {
+    width:60px; text-align:center; display:inline-block; margin-right:10px;
+    position:relative; bottom:18px;
+}
+main .container .notice_wrap .notice_nav .n_nav_top {margin-bottom:15px;}
 main .container .notice_wrap .notice_nav .n_nav_top a {}
 main .container .notice_wrap .notice_nav .n_nav_top a img {}
+main .container .notice_wrap .notice_nav .n_nav_top a span {}
 main .container .notice_wrap .notice_nav .n_nav_bottom {}
 main .container .notice_wrap .notice_nav .n_nav_bottom a {}
 main .container .notice_wrap .notice_nav .n_nav_bottom a img {}
-main .container .notice_wrap .mystore_bnr {}
-main .container .notice_wrap .mystore_bnr .img_bg {}
-main .container .notice_wrap .mystore_bnr .img_bg p {}
-main .container .notice_wrap .mystore_bnr .img_bg p em {}
-main .container .notice_wrap .mystore_bnr .img_bg p span {}
+main .container .notice_wrap .mystore_bnr {
+    background-image:url(../images/my_store_bnr.jpg);
+    width:367px; height:145px; border-radius:5px;
+}
+main .container .notice_wrap .mystore_bnr .img_bg {position:relative; left:35px; top:38px;}
+main .container .notice_wrap .mystore_bnr .img_bg p {
+    font-weight:500; letter-spacing:-0.02em; margin-bottom:8px;
+}
+main .container .notice_wrap .mystore_bnr .img_bg p:last-child {margin:24px 0 0;}
+main .container .notice_wrap .mystore_bnr .img_bg p em {
+    font-size:1.06rem;}
+main .container .notice_wrap .mystore_bnr .img_bg p span {
+    color:#aaa; font-size:0.75rem; font-weight:400;
+}
 /* =======================================================footer */
-main .container .footer_wrap {}
-main .container .footer_wrap .f_left {}
-main .container .footer_wrap .f_left .f_top {}
-main .container .footer_wrap .f_left .f_top li {}
-main .container .footer_wrap .f_left .f_top li a {}
-main .container .footer_wrap .f_left address {}
-main .container .footer_wrap .f_left address .call {}
-main .container .footer_wrap .f_left address .call p {}
-main .container .footer_wrap .f_left address .call p ul {}
-main .container .footer_wrap .f_left address .call p ul li {}
-main .container .footer_wrap .f_left address .call p ul li {}
-main .container .footer_wrap .f_left address .address_copy {}
-main .container .footer_wrap .f_left address .address_copy p {}
-main .container .footer_wrap .f_right {}
-main .container .footer_wrap .f_right .family_site {}
-main .container .footer_wrap .f_right .family_site a {}
-main .container .footer_wrap .f_right .family_site a img {}
-main .container .footer_wrap .f_right > a {}
-main .container .footer_wrap .f_right > a img {}
+footer .container {width:100%; background-color:#02597d;}
+footer .container .footer_wrap {
+    display:flex; flex-flow:row nowrap; justify-content:space-between;
+    width:1400px; margin:0 auto; padding:50px 0;
+}
+footer .container .footer_wrap * {color:#fff;}
+footer .container .footer_wrap .f_left {}
+footer .container .footer_wrap .f_left .f_top {margin-bottom:25px;}
+footer .container .footer_wrap .f_left .f_top li {display:inline-block; margin-right:20px; }
+footer .container .footer_wrap .f_left .f_top li:last-child {margin:0px; }
+footer .container .footer_wrap .f_left .f_top li a {font-size:0.88rem; letter-spacing:-0.02em;}
+footer .container .footer_wrap .f_left address {}
+footer .container .footer_wrap .f_left address .call {}
+footer .container .footer_wrap .f_left address .call p {font-size:1.25rem; font-weight:600; letter-spacing:-0.02em; margin-bottom:25px;}
+footer .container .footer_wrap .f_left address .call ul {display:flex; margin-bottom:10px;}
+footer .container .footer_wrap .f_left address .call ul li {font-weight:500; letter-spacing:-0.02em;}
+footer .container .footer_wrap .f_left address .call ul li:last-child {margin-left:30px;}
+footer .container .footer_wrap .f_left address .address_copy {margin-bottom:25px;}
+footer .container .footer_wrap .f_left address .address_copy p {
+    font-size:0.88rem; letter-spacing:-0.02em; line-height:1.5; 
+}
+footer .container .footer_wrap .f_left address .address_copy p:last-child {margin-top:25px;}
+footer .container .footer_wrap .f_right {display:flex; flex-flow:column nowrap; text-align:right;}
+footer .container .footer_wrap .f_right .family_site {padding:5px 10px 2px; background-color:#fff;}
+footer .container .footer_wrap .f_right .family_site a {color:#02597d; display:flex; justify-content:space-between;}
+footer .container .footer_wrap .f_right .family_site a img {position:relative; bottom:2px;}
+footer .container .footer_wrap .f_right > a {margin-top:25px;}
+footer .container .footer_wrap .f_right > a img {}
