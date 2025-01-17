@@ -1,0 +1,42 @@
+main {
+    width:500px; height:700px; margin:0 auto;
+    background-image:url(../images/bg.jpg);
+    background-size:cover;
+    padding:100px 20px; margin-top:100px;
+    position:relative; border-radius:10px; overflow:hidden;
+}
+    main::after {
+    content:''; display:block;
+    width:100%; height:100%;
+    background-color:rgba(255,255,255,0.5);
+    position:absolute; top:0; left:0; z-index:300;
+}
+main .wrap {
+    position:relative; z-index:999;}
+
+main .wrap > * {text-align:center; color:#2C2019;}
+main .wrap h1 {
+    font-size:1.7rem; font-weight:800; letter-spacing:-0.02em;
+    margin-bottom:30px;
+}
+main .wrap .user_info {margin-bottom:30px;}
+main .wrap .user_info input {
+    width:60px; padding: 5px 10px; border-radius:5px;
+    color:#2C2019;
+}
+main .wrap .user_info input::placeholder {font-size:0.88rem; color:#aaa; font-weight:300;} 
+main .wrap .user_info #year {}
+main .wrap .user_info #month {}
+main .wrap .user_info #day {}
+main .wrap .user_info span {margin-right:10px; font-weight:600;}
+main .wrap .user_info span:last-child {margin-right:0;}
+main .wrap .btn_result {}
+main .wrap .btn_result #flower_btn {
+    padding:20px 10px; width:100%; background-color:rgba(255,255,255,0.5);
+    border:1px solid #2C2019;
+    border-radius:5px; color:#2C2019; 
+}
+main .wrap .btn_result #flower_btn:hover {
+    background-color:#2C2019; color:#fff; 
+}
+main .wrap .btn_result .result {}
