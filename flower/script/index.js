@@ -54,15 +54,22 @@ console.log(birthday_flower[0].month);
 //월 칸에 숫자를 적고
 //확인 버튼을 누르면
 //그에 맞는 결과 값을 하단에 도출
-
 const year=document.querySelector('#year');
-const month=document.querySelector('#month');
 const day=document.querySelector('#day');
+const mon=document.querySelector('#month');
 const btn=document.querySelector('#flower_btn');
 const result=document.querySelector('#result');
-console.log(year,month,day,btn,result);
+console.log(mon,btn,result);
 
-function flower (month,flower,content){
-    let txt=`${month}월의 탄생화는 ${flower}이고 꽃말은 ${content}입니다.`
-    return console.log(txt);
+function flower (num){
+    if (year.value === '' || mon.value === '' || day.value === '') {result.textContent = '생년월일을 모두 입력해주세요.';}
+    else if (num < 1 || num > 12) {result.textContent = '1월부터 12월 사이의 숫자를 입력해주세요.';}
+    else {//결과출력
+        let index = num-1;
+        let txt = `${birthday_flower[index].month}월의 탄생화는 ${birthday_flower[index].flower}이고,<br>꽃말은 ${birthday_flower[index].content}입니다.`;
+        result.innerHTML = txt;
+    }
 }
+btn.addEventListener('click',()=>{
+    flower(Number(mon.value));
+})
