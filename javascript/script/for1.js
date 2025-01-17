@@ -84,3 +84,23 @@ checkAll.addEventListener('click',()=>{
         i.checked=checkAll.checked;
     }
 })
+
+//=================메인메뉴와 서브메뉴
+const gnb = document.querySelectorAll('.gnb > li');
+const sub = document.querySelectorAll('.sub');
+console.log(gnb,sub);
+//모든 서브 숨기기(초기세팅)
+for(let i of sub) i.style.display='none';
+//(for X) 메뉴1 마우스 올렸을 때 서브1 출력
+/* gnb[0].addEventListener('mouseover',()=>sub[0].style.display = 'block')
+gnb[1].addEventListener('mouseover',()=>sub[1].style.display = 'block')
+gnb[2].addEventListener('mouseover',()=>sub[2].style.display = 'block')
+gnb[3].addEventListener('mouseover',()=>sub[3].style.display = 'block') */
+for(let i of gnb){
+    console.log(i) //Node 4 전체출력
+    i.addEventListener('mouseover',()=>{
+        console.log(i);//마우스 올린 상태만 출력
+        console.log(i.children[1])
+        i.children[1].style.display = 'block';
+    })
+}
