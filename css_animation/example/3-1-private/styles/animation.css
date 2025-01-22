@@ -1,0 +1,32 @@
+main .bg_wrap::before {
+    display:inline-block; content:'';
+    width:50%; height:100%;
+    position:absolute; left:0px; top:0;
+    background:linear-gradient(90deg, rgb(9,13,43), transparent);
+    z-index:100;}
+main .bg_wrap::after {
+    display:inline-block; content:'';
+    width:50%; height:100%;
+    position:absolute; right:0cap; top:0;
+    background:linear-gradient(-90deg, rgb(9,13,43), transparent);
+    z-index:100;
+}
+main .bg_wrap .bg {background-position-X:0;}
+main .bg_wrap .bg1{animation:bg_late 100s linear infinite;}
+main .bg_wrap .bg2{animation:bg_late 25s linear infinite; opacity:0.5;}
+main .bg_wrap .bg3{animation:bg_late 15s linear infinite; opacity:0.5;}
+main .car #left_tire, main .car #right_tire {animation:rotate 0.7s linear infinite;}
+main .scroll img {animation:scroll_late 1s linear infinite alternate;}
+
+@keyframes bg_late {
+    0% {background-position-x:0;}
+    100% {background-position-x:1522px;}
+}
+@keyframes rotate {
+    0% {transform:rotate(0)}
+    100% {transform:rotate(-360deg)}
+}
+@keyframes scroll_late {
+    0% {transform:translateY(0)}
+    100% {transform:translateY(30px)}
+}

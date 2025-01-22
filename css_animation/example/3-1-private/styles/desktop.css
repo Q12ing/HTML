@@ -6,11 +6,11 @@ header {
     align-items:center; z-index:999;
     position:fixed; left:50%; top:0; margin-left:-700px;
 }
-header nav a {margin:0 7px;}
+header nav a {margin:0 7px; color:#fff;}
 header .right a {
     position:relative; padding:5px 5px 5px 27px;
     border:1px dashed rgba(255,255,255,0.6); 
-    font-size:0.875rem; border-radius:3px;
+    font-size:0.875rem; border-radius:3px; color:#fff;
 }
 header .right a::before {
     content:''; display:block;
