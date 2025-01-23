@@ -46,7 +46,7 @@ function writer(){
         textSpan.innerHTML += text.charAt(i);
         i++;
         console.log(i, text.charAt(i))
-    } else {clearInterval(timer3);}
+    } else {console.log('타이머 종료'); clearInterval(timer3);}
 }
 const timer3 = setInterval(writer,200);
 writer() //함수호출
