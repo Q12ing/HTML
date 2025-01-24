@@ -1,0 +1,154 @@
+main {padding-top:130px;}
+main .product_container {}
+main .product_container .product_wrap {
+    width:1400px; margin:0 auto; padding:30px 0 100px;
+}
+main .product_container .product_wrap .path {margin-bottom:15px;}
+main .product_container .product_wrap .path ul {
+    display:flex; align-items:center;
+}
+main .product_container .product_wrap .path ul li {margin-right:10px;}
+main .product_container .product_wrap .path ul li::after {
+    content:'>'; display:inline-block; margin-left:10px;
+    color:#555; font-size:0.94rem; letter-spacing:-0.02em;
+}
+main .product_container .product_wrap .path ul .active::after,
+main .product_container .product_wrap .path ul li:first-child::after {
+    content:''; display:none;
+}
+main .product_container .product_wrap .path ul li:first-child {margin-right:10px;}
+main .product_container .product_wrap .path ul li a {
+    color:#555; font-size:0.94rem; letter-spacing:-0.02em;}
+main .product_container .product_wrap .path ul li a img {}
+main .product_container .product_wrap .path ul .active {/* 활성화 스타일 */
+}
+main .product_container .product_wrap .path ul .active a {/* 활성화 스타일 */
+    color:#000; font-weight:500;
+}
+main .product_container .product_wrap .pdt_top {display:flex; justify-content:space-between;}
+main .product_container .product_wrap .pdt_top .pdt_thumb {width:710px;}
+main .product_container .product_wrap .pdt_top .pdt_thumb div[class$=thumb] {/* big, small 공통 선택자 */}
+main .product_container .product_wrap .pdt_top .pdt_thumb div[class$=thumb] a {border-radius:7px; overflow:hidden;}
+main .product_container .product_wrap .pdt_top .pdt_thumb div[class$=thumb] a img {width:100%;}
+main .product_container .product_wrap .pdt_top .pdt_thumb .big_thumb {margin-bottom:15px;}
+main .product_container .product_wrap .pdt_top .pdt_thumb .big_thumb a {display:inline-block; height:600px;}
+main .product_container .product_wrap .pdt_top .pdt_thumb .big_thumb a img {}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb {
+    display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-around;
+}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb button {
+    width:50px; height:50px;
+}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb button img {}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb .prev_btn {}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb .prev_btn img {}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb .next_btn img {}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb a {position:relative; height:120px;}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb a::after {
+    content:''; display:block; background-color:rgba(0,0,0,0.3); width:100%; height:100%;
+    position:absolute; top:0; left:0;
+}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb a img {}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb .active {/* 활성화 스타일 */}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb .active::after {/* 활성화 스타일 */
+    content:''; display:none;
+}
+main .product_container .product_wrap .pdt_top .pdt_thumb .small_thumb .active img {}
+main .product_container .product_wrap .pdt_top .contents {width:622px;}
+main .product_container .product_wrap .pdt_top .contents .icon {display:flex; justify-content:space-between;}
+main .product_container .product_wrap .pdt_top .contents .icon .tag {}
+main .product_container .product_wrap .pdt_top .contents .icon .tag span {
+    font-size:0.81rem; letter-spacing:-0.02em; display:inline-block;
+    padding:7px 10px; border-radius:5px;
+}
+main .product_container .product_wrap .pdt_top .contents .icon .tag .brand {
+    border:1px solid #aaa; color:#555; background-color:#fff;
+}
+main .product_container .product_wrap .pdt_top .contents .icon .tag .best {
+    border:1px solid #02597D; color:#fff; background-color:#02597D;
+}
+main .product_container .product_wrap .pdt_top .contents .icon .share {}
+main .product_container .product_wrap .pdt_top .contents .icon .share img {}
+main .product_container .product_wrap .pdt_top .contents .info {padding:30px 0;}
+main .product_container .product_wrap .pdt_top .contents .info h1 {
+    font-size:2.00rem; font-weight:600; letter-spacing:-0.02em;
+    margin-bottom:37px;
+}
+main .product_container .product_wrap .pdt_top .contents .info .price_before {margin-bottom:15px;}
+main .product_container .product_wrap .pdt_top .contents .info .price_before del {
+    color:#555; font-size:1.25rem; letter-spacing:-0.04em; font-weight:500;
+}
+main .product_container .product_wrap .pdt_top .contents .info .price_box {}
+main .product_container .product_wrap .pdt_top .contents .info .price_box span {
+    font-size:1.63rem; font-weight:600; letter-spacing:-0.02em;
+}
+main .product_container .product_wrap .pdt_top .contents .info .price_box .sale {
+    color:#DA074A;
+}
+main .product_container .product_wrap .pdt_top .contents .info .price_box .price em {font-weight:400;}
+main .product_container .product_wrap .pdt_top .contents .content {
+    padding:30px 0;
+    border-top:1px solid #EEE; border-bottom:1px solid #EEE;
+}
+main .product_container .product_wrap .pdt_top .contents .content dl {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main .product_container .product_wrap .pdt_top .contents .content dl dt,
+main .product_container .product_wrap .pdt_top .contents .content dl dd {
+    margin-bottom:20px;
+}
+main .product_container .product_wrap .pdt_top .contents .content dl dt {
+    color:#555; font-weight:500; letter-spacing:-0.02em; width:75px;
+    
+}
+main .product_container .product_wrap .pdt_top .contents .content dl dd {
+    letter-spacing:-0.02em; margin-left:20px; width:calc(100% - 95px);
+}
+main .product_container .product_wrap .pdt_top .contents .content dl dd:nth-of-type(1) a {float:right;
+}
+main .product_container .product_wrap .pdt_top .contents .content dl dd span {}
+main .product_container .product_wrap .pdt_top .contents .content dl dd span em {font-weight:600;}
+main .product_container .product_wrap .pdt_top .contents .content dl dd a {}
+main .product_container .product_wrap .pdt_top .contents .content dl dd a img {}
+main .product_container .product_wrap .pdt_top .contents .content dl dd .benefit {position:relative; top:-3px; margin-right:20px;}
+main .product_container .product_wrap .pdt_top .contents .content dl dd .benefit a {margin-left:5px;}
+main .product_container .product_wrap .pdt_top .contents .content dl dd .benefit a img {position:relative; top:2px;}
+main .product_container .product_wrap .pdt_top .contents .content dl #code {}
+main .product_container .product_wrap .pdt_top .contents .content dl #parcel {}
+main .product_container .product_wrap .pdt_top .contents .add_user {padding:30px 0;}
+main .product_container .product_wrap .pdt_top .contents .add_user div[class^=add] {display:flex; align-items:center; justify-content:space-between;}
+main .product_container .product_wrap .pdt_top .contents .add_user span[class=add_txt] {width:75px; color:#555; font-weight:500; letter-spacing:-0.02em; width:75px;}
+main .product_container .product_wrap .pdt_top .contents .add_user select {
+    width:calc(100% - 95px); padding:10px 15px; 
+    border:1px solid #aaa; border-radius:5px;
+    background:#fff url(../images/product_arrow.png) no-repeat 98% 50%;
+    color:#555;
+}
+main .product_container .product_wrap .pdt_top .contents .add_user .add_essential {margin-bottom:20px;}
+main .product_container .product_wrap .pdt_top .contents .add_user .add_essential .add_txt {}
+main .product_container .product_wrap .pdt_top .contents .add_user .add_essential #color {border-color:#02597D; background-image:url(../images/product_arrow_color.png)}
+main .product_container .product_wrap .pdt_top .contents .add_user .add_essential #color option {}
+main .product_container .product_wrap .pdt_top .contents .add_user .add_option {}
+main .product_container .product_wrap .pdt_top .contents .add_user .add_option .add_txt {}
+main .product_container .product_wrap .pdt_top .contents .add_user .add_option #stool {}
+main .product_container .product_wrap .pdt_top .contents .add_user .add_option #stool option {}
+main .product_container .product_wrap .pdt_top .contents .final_wrap {text-align:right; margin-bottom:30px;}
+main .product_container .product_wrap .pdt_top .contents .final_wrap .final_txt {font-size:1.06rem; font-weight:500; letter-spacing:-0.02em;}
+main .product_container .product_wrap .pdt_top .contents .final_wrap .final_price {font-size:1.50rem; font-weight:600; letter-spacing:-0.04em; margin-left:30px; color:#DA074A;}
+main .product_container .product_wrap .pdt_top .contents .final_wrap .final_price em {font-size:1.06rem; font-weight:500; color:#000;}
+main .product_container .product_wrap .pdt_top .contents .order_btn {display:flex; align-items:center; justify-content:space-between;}
+main .product_container .product_wrap .pdt_top .contents .order_btn .gift_wish {}
+main .product_container .product_wrap .pdt_top .contents .order_btn .gift_wish button {width:54px; height:54px; border:1px solid #aaa; border-radius:5px;}
+main .product_container .product_wrap .pdt_top .contents .order_btn .gift_wish button img {display:inline-block; width:24px;}
+main .product_container .product_wrap .pdt_top .contents .order_btn .gift_wish #gift {}
+main .product_container .product_wrap .pdt_top .contents .order_btn .gift_wish #gift img {}
+main .product_container .product_wrap .pdt_top .contents .order_btn .gift_wish #wish {margin-left:10px; position:relative; top:-2px;}
+main .product_container .product_wrap .pdt_top .contents .order_btn .gift_wish #wish img {}
+main .product_container .product_wrap .pdt_top .contents .order_btn .order {}
+main .product_container .product_wrap .pdt_top .contents .order_btn .order button {
+    width:230px; padding:15px 0;
+    font-size:1.50rem; font-weight:600; letter-spacing:-0.04em;
+    border:#AAA solid 1px; border-radius:5px; background-color:#fff; color:#555;
+}
+main .product_container .product_wrap .pdt_top .contents .order_btn .order #basket {}
+main .product_container .product_wrap .pdt_top .contents .order_btn .order #buy {
+    border-color:#02597D; background-color:#02597D; color:#fff; margin-left:10px;
+}
