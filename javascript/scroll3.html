@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll2 | 자바스크립트</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./script/scroll3.js" defer></script>
+    <style>
+        .box1, .box3 {height:100vh; background:yellow; font-size:5rem;}
+        /* 고정 대상의 부모는 고정자식들보다 높이값이 커야한다. */
+        .box2 {height:calc((500px * 3) + 1000px);}
+        .box2 h1 {/* 스크롤 화면 고정 대상 */
+            font-size:5rem; position:sticky; top:500px; margin-top:500px;}
+        .box2 .bg {/* 스크롤 화면 고정 대상  */
+            position:sticky; top:500px; margin-top:500px;
+            float:right;
+        }
+        .box2 .bg .card {}
+        .box2 .bg .card img {height:500px; display:block;}
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">
+        <h1>Sticky Text</h1>
+        <div class="bg">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/28/93/b6/2893b614eac4de00c6fe2155ad147900.jpg" alt="">
+                <img src="https://i.pinimg.com/236x/66/e9/e0/66e9e01e067ba2b6f52103257ed68899.jpg" alt="">
+                <img src="https://i.pinimg.com/736x/ec/6f/28/ec6f28370b22fe2596d13dc272dda0cb.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="box box3">3</div>
+</body>
+</html>
