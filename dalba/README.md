@@ -52,7 +52,7 @@ font-size:4rem; font-weight:900; letter-spacing:-0.02em;
 
 ## Gloock
 ### 할인 (d) 20
-font-size:0.25rem; letter-spacing:-0.02em;
+font-size:1.25rem; letter-spacing:-0.02em;
 
 
 ## Color Style

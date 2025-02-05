@@ -1,7 +1,9 @@
 /* =======================================★★★★★ 전체 공용 선택자 ★★★★★ */
 main {}
 main .index_wrap {/* 풀컨텐츠 */}
-main .index_wrap .container {/* 컨텐츠너비 w1400 */}
+main .index_wrap .container {/* 컨텐츠너비 w1400 */
+    max-width:1400px; margin:0 auto;
+}
 main .content_title {}
 main .content_title .contents_name {}
 main .content_title .contents_txt {}
@@ -48,14 +50,14 @@ main .main_bnr .main_swiper .swiper-wrapper .slide1 {
     background-position:center;
     position:relative;
 }
-main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title {background:yellow;
-    width:1400px; margin:0 auto;
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title {
+    width:1400px; position:absolute; left:15%; bottom:15%; 
 }
 main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .bnr_product {display:inline-block; margin-bottom:78px;}
 main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .bnr_product img {}
-main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .sub_title {letter-spacing:-0.02em;}
+main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .sub_title {letter-spacing:-0.02em; margin-bottom:10px;}
 main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .main_title {
-    font-size:4rem; font-weight:900; letter-spacing:-0.02em;}
+    font-size:4rem; font-weight:900; letter-spacing:-0.02em; font-family:"hankenBB","pretendard",sans-serif;}
 main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .slide_txt {
     line-height:1.5; letter-spacing:-0.02em;
     margin:20px 0 30px 0;
@@ -65,7 +67,11 @@ main .main_bnr .main_swiper .swiper-wrapper .slide1 .slide_title .view_more img 
 main .main_bnr .main_swiper .swiper-wrapper .slide2 {background:aqua;}
 main .main_bnr .main_swiper .swiper-wrapper .slide3 {background:red;}
 main .main_bnr .main_dot {}
-main .main_bnr .main_dot li {/* 페이지네이션 전체 */}
+.dot_active {border-bottom:1px solid #7a7a7a; opacity:1;} /* 페이지네이션 활성화 클래스 */
+main .main_bnr .main_dot li {/* 페이지네이션 전체 */
+    font-family:"gloockR","pretendard",sans-serif;
+    color:#7a7a7a; padding-bottom:10px; font-size:1.25rem; letter-spacing:-0.02em; opacity:0.3;
+}
 main .main_bnr .main_dot .dot1 {}
 main .main_bnr .main_dot .dot2 {}
 main .main_bnr .main_dot .dot3 {}
