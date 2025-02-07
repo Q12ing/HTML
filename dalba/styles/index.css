@@ -16,9 +16,9 @@ main .contents_title .contents_menu li {
 }
 main .contents_title .contents_menu li::after {
     content:''; display:block; background:#b97e21; width:100%; height:2px; margin-top:5px;
-    transform:scale(0); transition:transform 0.3s;
+    transform:scale(0);
 }
-main .contents_title .contents_menu li:hover::after {transform:scale(1);}
+main .contents_title .contents_menu li:hover::after {transform:scale(1); transition:transform 0.3s;}
 main .contents_title .contents_menu .active {}
 main .contents_title .contents_menu .all {}
 main .contents_title .contents_menu .make_up {margin:0 30px;}
@@ -29,18 +29,22 @@ main .view_more {/* more 버튼 */
 }
 main .view_more:hover {opacity:0.8;}
 main .view_more img {margin-left:10px; position:relative; top:4px;}
-main .container .product_box {}
+main .container .product_box {width:100%; position:relative;}
 main .container .product_box .pb {} /* swiper 부모+프로그레스 wrap */
+main .container .product_box .all {} /* 개별 swiper 부모+프로그레스 wrap */
+main .container .product_box .makeup {display:none;} /* 개별 swiper 부모+프로그레스 wrap */
+main .container .product_box .skincare {display:none;} /* 개별 swiper 부모+프로그레스 wrap */
 main .container .product_box .pb .swiper {width:100%; height:500px;} /* swiper 부모 */
 main .container .product_box .pb .swiper .swiper-wrapper {}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum {margin-bottom:20px;}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide > .thum img {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product {text-align:left;}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product > * {letter-spacing:-0.02em;}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title {font-weight:500; margin-bottom:15px;}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .title a {}
 main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price {}
-main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price del {}
+main .container .product_box .pb .swiper .swiper-wrapper .swiper-slide .product .price del {font-size:0.875rem; font-weight:300; opacity:0.5;}
 main .pb .progress_more {background:yellow; display:flex; justify-content:space-between; align-items:center;}
 main .pb .progress_more .progress_bar {width:1350px; height:2px; background:#ccc;}
 main .pb .progress_more .progress_bar .active_progress_bar {background:#b97e21;}
@@ -114,3 +118,4 @@ main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .produc
 main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .product .title a {}
 main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .product .price {}
 main .best_seller .container .product_box .all .bs_all_swiper .bs_slide1 .product .price del {}
+/* =======================================★★★★★ 2열 Brand Story */
