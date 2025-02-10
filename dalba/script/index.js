@@ -39,10 +39,3 @@ const bsSkincareSwiper = new Swiper('.bs_skincare_swiper',productSettings());
 const npAllSwiper = new Swiper('.np_all_swiper',productSettings());
 const npMakeUpSwiper = new Swiper('.np_makeup_swiper',productSettings());
 const npSkincareSwiper = new Swiper('.np_skincare_swiper',productSettings());
-
-/* best, new product progress bar */
-const pbProgress = document.querySelectorAll ('.active_progress_bar');
-function progressBar() {
-    return {};
-}
-for(let i in pbProgress){console.log(i);}
