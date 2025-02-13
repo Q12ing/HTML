@@ -8,8 +8,9 @@ main .product_wrap .container .photo {margin-right:40px;}
 main .product_wrap .container .photo .big {margin-bottom:20px; width:550px;}
 main .product_wrap .container .photo .big img {width:100%;}
 main .product_wrap .container .photo .thumbnail {display:flex; justify-content:space-between;}
-main .product_wrap .container .photo .thumbnail a {display:block; width:75px;}
-main .product_wrap .container .photo .thumbnail a img {width:100%;}
+main .product_wrap .container .photo .thumbnail a {display:block; width:75px; overflow:hidden;}
+main .product_wrap .container .photo .thumbnail a img {width:100%; transition:transform 0.4s;}
+main .product_wrap .container .photo .thumbnail a img:hover {transform:scale(1.1);}
 main .product_wrap .container .photo .thumbnail .active {}
 main .product_wrap .container .photo .thumbnail .active img {}
 main .product_wrap .container .product_contents {}
@@ -48,52 +49,52 @@ main .product_wrap .container .product_contents .order_contents .select_contents
 main .product_wrap .container .product_contents .order_contents .select_contents #capacity option {font-size:0.93rem; letter-spacing:-0.02em;}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container {}
 /* ================================================================================================================= 옵션 공통 선택자 */
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] {
-    background:#f5f5f5; padding:10px 12px; border-radius:5px;
-    display:flex; justify-content:space-between; align-items:center;
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] p {
+    font-size:0.93rem; letter-spacing:-0.02em; float:left; position:relative; top:3px;
 }
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] p {font-size:0.93rem; letter-spacing:-0.02em;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] {display:flex;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] p[class^=op_total] {color:#555; position:relative; top:3px;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box {
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] {float:right; display:flex;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] p[class^=op_total] {color:#555; position:relative; top:3px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] .num_box {
     border-radius:5px; overflow:hidden; border:1px solid #ccc; margin:0 10px;
 }
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box input {
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] .num_box input {
     order:0; border:1px solid #ccc; border-top:0; border-bottom:0; width:40px; text-align:center;
 }
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button{}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button img {position:relative; top:2px; left:-3px;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button[class^=minus] {order:-1;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box button[class^=minus] img {left:3px;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box .button[class^=plus] {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=num] .num_box .button[class^=plus] img {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] .num_box button{}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] .num_box button img {position:relative; top:2px; left:-3px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] .num_box button[class^=minus] {order:-1;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] .num_box button[class^=minus] img {left:3px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] .num_box .button[class^=plus] {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] div[class=opnum] .num_box .button[class^=plus] img {}
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] .close {cursor:pointer;}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] .close img {position:relative; top:2px;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container div[class$=ml] .close img {position:relative; top:-1px;}
 /* ================================================================================================================ */
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml {margin:15px 0;}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml {background:#f5f5f5; padding:10px 12px; border-radius:5px; margin-top:15px; overflow:hidden; }
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml p {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .op_total {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box #op50ml_num {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box button {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box button img {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box .minus {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .num_box .plus {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .close {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .num .close img {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .op_total {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .num_box {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .num_box #op50ml_num {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .num_box button {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .num_box button img {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .num_box .minus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .num_box .plus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .close {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op50ml .opnum .close img {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml {background:#f5f5f5; padding:10px 12px; border-radius:5px; margin-top:15px; overflow:hidden; }
 main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml p {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .op_total {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box{}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box #op100ml_num {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box button {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box button img {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box .minus {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .num_box .plus {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .close {}
-main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .num .close img {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .op_total {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .num_box{}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .num_box #op100ml_num {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .num_box button {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .num_box button img {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .num_box .minus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .num_box .plus {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .close {}
+main .product_wrap .container .product_contents .order_contents .select_contents .op_container .op100ml .opnum .close img {}
 main .product_wrap .container .product_contents .order_contents .select_contents .order_price {
     margin-top:33px; padding-bottom:15px; overflow:hidden;
     border-bottom:1px solid #ccc;

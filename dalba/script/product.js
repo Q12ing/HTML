@@ -5,6 +5,34 @@ share.addEventListener('click',()=>{
     window.alert('링크가 복사되었습니다.')
 })
 
+
+/* 섬네일 반응 */
+const thumbnail = document.querySelectorAll('.thumbnail a img');
+const bigImage = document.querySelector('.photo .big img');
+console.log(thumbnail[0].src);
+function bigSrc(num){
+    return bigImage.src=`./images/b${num}.jpg`
+}
+thumbnail[0].addEventListener('mouseover',()=>{
+    bigSrc(1);
+});
+thumbnail[1].addEventListener('mouseover',()=>{
+    bigSrc(2);
+});
+thumbnail[2].addEventListener('mouseover',()=>{
+    bigSrc(3);
+});
+thumbnail[3].addEventListener('mouseover',()=>{
+    bigSrc(4);
+});
+thumbnail[4].addEventListener('mouseover',()=>{
+    bigSrc(5);
+});
+thumbnail[5].addEventListener('mouseover',()=>{
+    bigSrc(6);
+});
+
+
 /* 배송정보 */
 const schedule = document.querySelector('.schedule');
 const scheduleOpen = document.querySelector('.schedule_open');
@@ -14,6 +42,21 @@ schedule.addEventListener('click',(e)=>{
     e.preventDefault();
     scheduleOpen.classList.toggle('hide');
 });
+
+/* 셀렉트 옵션 */
+const selectOption = document.querySelector('#capacity');
+const op50ml=document.querySelector('.op50ml');
+const op100ml=document.querySelector('.op100ml');
+console.log (op50ml)
+console.log(selectOption.innerText)
+selectOption.addEventListener('change',function(){
+    let selectedValue = selectOption.value;
+    if (selectedValue == '50ml') {
+        op50ml.style.display='block'
+    }else if (selectedValue == '100ml'){
+        op100ml.style.display='block'
+    }
+})
 
 /* 총금액 */
 let price50 = 27000; //주문금액
@@ -31,7 +74,6 @@ const orderPrice100 = document.querySelector('.op_total100')//최종주문표시
 let op100Num=document.querySelector('#op100ml_num');
 
 let totalPrice = 0; //총 가격 저장 변수
-
 
 plusBtn50.addEventListener('click',()=>{
     number50++; // 수량 증가
@@ -65,7 +107,11 @@ minusBtn100.addEventListener('click',()=>{
         orderPrice100.innerText=total100.toLocaleString('ko-kr');
     };
 })
-$(.close).click.hide;
+
+/* close 눌렀을 때 옵션닫기-제이쿼리 */
+$('.close').click(function(){
+    $(this).parent().parent().hide();
+})
 
 
 /* 장바구니 버튼 클릭 상호 작용 */
