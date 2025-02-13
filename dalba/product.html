@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <h1><img src="./images/logo.png" alt="달바"></h1>
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="달바"></a></h1>
         <div class="nav_wrap">
             <nav>
                 <p class="full_depth">
@@ -39,7 +39,99 @@
         </div>
     </header>
     <main>
-        
+        <div class="product_wrap"><!-- 풀컨텐츠 -->
+            <div class="container product_container"><!-- 뷰컨텐츠 w1100 -->
+                <div class="photo">
+                    <div class="big">
+                        <img src="./images/b01.jpg" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <a href="#" class="active"><img src="./images/s01.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s02.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s03.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s04.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s05.jpg" alt=""></a>
+                        <a href="#"><img src="./images/s06.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="product_contents">
+                    <div class="cord_share">
+                        <p class="cord">#비타세럼토너 #결광토너 #100시간보습 #비타생기 #비타케어</p>
+                        <p class="share"><img src="./images/share.png" alt=""></p>
+                    </div>
+                    <h1>화이트 트러플 퍼스트 아로마틱 스프레이 세럼</h1>
+                    <h2>White Truffle First Aromatic Spray Serum</h2>
+                    <p class="price">KRW 32,000</p>
+                    <p class="descrip">미백 기능성 나이아신아마이드 2% 베이스에 글루타티온, 비타민C(아스코빅애씨드)의 시너지로 생기 잃은 칙칙한 피부를 밝게 화이트닝</p>
+                    <dl class="info">
+                        <dt>용량</dt>
+                        <dd>100ml</dd>
+                        <dt>배송비</dt>
+                        <dd>2,500원(30,000원 이상 무료배송)</dd>
+                        <dt>배송기간</dt>
+                        <dd>약 2~3일 소요<img src="./images/info.png" alt="" class="schedule">
+                            <div class="schedule_open">
+                                택배사 사정 혹은 산간지역에 따라 1~2일 정도 더 소요될 수 있습니다.
+                            </div>
+                        </dd>
+                    </dl>
+                    <div class="order_contents">
+                        <div class="select_contents">
+                            <select name="capacity" id="capacity">
+                                <option value="">선택(필수)</option>
+                                <option value="50ml">50ml(-KRW 5,000)</option>
+                                <option value="100ml">100ml</option>
+                            </select>
+                            <div class="op_container">
+                                <div class="op50ml">
+                                    <p>50ml (-KRW 5,000)</p>
+                                    <div class="num">
+                                        <p class="op_total50">27,000</p>
+                                        <div class="num_box">
+                                            <button type="button" class="minus50"><img src="./images/minus.png" alt=""></button>
+                                            <input type="number" name="op50ml_num" id="op50ml_num" value="1">
+                                            <button type="button" class="plus50"><img src="./images/plus.png" alt=""></button>
+                                        </div>
+                                        <p class="close"><img src="./images/close.png" alt=""></p>
+                                    </div>
+                                </div>
+                                <div class="op100ml">
+                                    <div class="op100ml_price">
+                                        <p>100ml</p>
+                                    </div>
+                                    <div class="num">
+                                        <p class="op_total100">34,000</p>
+                                        <div class="num_box">
+                                            <button type="button" class="minus100"><img src="./images/minus.png" alt=""></button>
+                                            <input type="number" name="op100ml_num" id="op100ml_num" value="1">
+                                            <button type="button" class="plus100"><img src="./images/plus.png" alt=""></button>
+                                        </div>
+                                        <p class="close"><img src="./images/close.png" alt=""></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order_price">
+                                <p>상품금액합계</p>
+                                <p>KRW<em class="total_price">86,000</em></p>
+                            </div>
+                            <div class="order_btn">
+                                <button type="button" id="cart_btn">장바구니</button>
+                                <button type="button" id="buy_btn">바로구매</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart_open_bg">
+            <div class="cart_container">
+                <p>장바구니에 담았습니다.</p>
+                <div class="link">
+                    <a href="#">쇼핑 계속하기</a>
+                    <a href="#">장바구니 가기</a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">
