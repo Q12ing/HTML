@@ -2,7 +2,7 @@ main {}
 main .product_wrap {width:100%;}
 main .product_wrap .container {max-width:1100px; margin:0 auto;}
 main .product_wrap .product_container {
-    margin-top:180px; display:flex;
+    margin-top:180px; margin-bottom:100px; display:flex;
 }
 main .product_wrap .container .photo {margin-right:40px;}
 main .product_wrap .container .photo .big {margin-bottom:20px; width:550px;}
@@ -126,4 +126,135 @@ main .cart_open_bg .cart_container .link a {
 }
 main .cart_open_bg .cart_container .link a:nth-child(1) {margin-right:10px;}
 main .cart_open_bg .cart_container .link a:nth-child(2) {background:#b97e21; color:#fff;}
-
+/* =========================================================================================================================================*/
+/* 공용선택자 */
+main .page_wrap div[class$=container] {margin:0 auto;}
+main .page_wrap .page_title {
+    padding-bottom:10px; border-bottom:1px solid #232323; margin-bottom:25px;
+    display:flex; justify-content:space-between;
+}
+main .page_wrap .page_title .title_main {font-size:1.125rem; font-weight:500; letter-spacing:-0.02em;}
+main .page_wrap .page_title .title_main em {font-size:1rem;}
+main .page_wrap .page_title .entire {}
+main .page_wrap .page_title .entire img {}
+main .page_wrap .page_title .sequence {}
+main .page_wrap .page_title .sequence li {}
+main .page_wrap .page_title .sequence li a {}
+/* ========공용선택자 end */
+main .page_tap {margin-bottom:80px; border-bottom:1px solid #ccc;}/* 상품페이지 탭바 */
+main .page_tap .page_tapbar {max-width:1400px; margin:0 auto; display:flex; position:relative;}
+main .page_tap .page_tapbar li {
+    width:calc(100% / 4); text-align:center;
+}
+main .page_tap .page_tapbar .active::after {
+    content:"";
+    display:block;
+    position:relative;
+    bottom: -1px; /* ul의 하단선과 정확히 겹치게 */
+    left:0;
+    width:100%;
+    height:1px; 
+    background-color:#232323;
+}
+main .page_tap .page_tapbar li a {
+    display:block; width:100%; padding:17px;
+    font-size:1.125rem; font-weight:500; letter-spacing:-0.02em;
+}
+main .page_tap .page_tapbar .page_img {}
+main .page_tap .page_tapbar .page_review {}
+main .page_tap .page_tapbar .page_buy {}
+main .page_tap .page_tapbar .page_qna {}
+/* =========================================================================================================================================*/
+main .page_wrap {}/* 전체너비 */
+main .page_wrap .img_container {max-width:1400px;}/* 탭별 컨텐츠너비 */
+main .page_wrap .img_container .img_page {margin-bottom:200px;}
+main .page_wrap .img_container .img_page .ad_bnr {
+    height:124px;
+    background-image:url(../images/ad_bnr.png);
+    background-position:center;
+    background-size:cover;
+}
+main .page_wrap .img_container .img_page .ad_bnr a {display:flex; align-items:center; height:100%;}
+main .page_wrap .img_container .img_page .ad_bnr a p {font-size:1.25rem; letter-spacing:-0.02em;}
+main .page_wrap .img_container .img_page .ad_bnr a p span {font-size:1.5rem; font-weight:600;}
+main .page_wrap .img_container .img_page .ad_bnr a p img {}
+main .page_wrap .img_container .img_page .img_wrap {max-width:1100px; width:1100px; margin:0 auto;}
+main .page_wrap .img_container .img_page .img_wrap img {width:100%;}
+/* ====================================================================== */
+main .page_wrap .review_container {max-width:1100px;}
+main .page_wrap .review_container .score_box {}
+main .page_wrap .review_container .score_box .page_title {}
+main .page_wrap .review_container .score_box .page_title .title_main {}
+main .page_wrap .review_container .score_box .page_title .title_main em {}
+main .page_wrap .review_container .score_box .score {display:flex;}
+main .page_wrap .review_container .score_box .score .score_left {background:red; border-right:1px solid #ccc; text-align:center; width:calc(100% / 3); padding:10px;}
+main .page_wrap .review_container .score_box .score .score_left .score_top {font-size:1.75rem; font-weight:600; letter-spacing:-0.02em;}
+main .page_wrap .review_container .score_box .score .score_left .score_top img {position:relative; bottom:-3px;}
+main .page_wrap .review_container .score_box .score .score_left .score_txt {
+    margin:30px 0;
+    letter-spacing:-0.02em;
+}
+main .page_wrap .review_container .score_box .score .score_left .posting_btn {
+    display:block; width:100%; border-radius:5px; background-color:#232323;
+    color:#fff; padding:12px 0;
+}
+main .page_wrap .review_container .score_box .score .score_right {}
+main .page_wrap .review_container .score_box .score .score_right li {/* score1~5 공용선택자 */
+    display:flex; align-items:center; justify-content:space-between; margin-bottom:7px;
+}
+main .page_wrap .review_container .score_box .score .score_right li > * {font-size:0.875rem; line-height:1.3; letter-spacing:-0.02em;}
+main .page_wrap .review_container .score_box .score .score_right li .impression {width:70px;} 
+main .page_wrap .review_container .score_box .score .score_right li .scorebar_bg {
+    background-color:#f2ece3; border-radius:30px; width:500px; height:10px; margin:0 15px 0;
+} 
+main .page_wrap .review_container .score_box .score .score_right li .scorebar_bg .scorebar_object {
+    background-color:#b97e21; border-radius:30px; width:0%; height:100%;
+} 
+main .page_wrap .review_container .score_box .score .score_right .score5 .scorebar_bg .scorebar_object {width:calc((100% / 10) * 8);}
+main .page_wrap .review_container .score_box .score .score_right .score4 .scorebar_bg .scorebar_object {width:calc((100% / 10) * 6);}
+main .page_wrap .review_container .score_box .score .score_right li .score_num {width:20px;} 
+main .page_wrap .review_container .photo_video_box {} 
+main .page_wrap .review_container .photo_video_box .page_title {} 
+main .page_wrap .review_container .photo_video_box .page_title .title_main {} 
+main .page_wrap .review_container .photo_video_box .page_title .title_main em {} 
+main .page_wrap .review_container .photo_video_box .page_title .entire {} 
+main .page_wrap .review_container .photo_video_box .page_title .entire img {} 
+main .page_wrap .review_container .photo_video_box .photo_video_preview {} 
+main .page_wrap .review_container .photo_video_box .photo_video_preview li {} 
+main .page_wrap .review_container .photo_video_box .photo_video_preview li a {} 
+main .page_wrap .review_container .photo_video_box .photo_video_preview li a img {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box .page_title {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box .page_title .title_main {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box .page_title .title_main em {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box .page_title .sequence {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box .page_title .sequence li {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box .page_title .sequence li a {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box .content {} 
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li {} /* content1~5 공통선택자 */ 
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .user_name_score {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .user_name_score .nickname {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .user_name_score .user_score {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .user_name_score .user_score img {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .product_option {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .product_review_txt {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .user_review_photo {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .user_review_photo li {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .user_review_photo li a {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_telling .user_review_photo li a img {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_info {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_info .info_top {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_info .info_top span {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_info .date_up {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_info .date_up .date {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_info .date_up button {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .content li .user_info .date_up button img {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .pagenation {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .pagenation button {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .pagenation .page_first {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .pagenation .page_prev {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .pagenation .page_next {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .pagenation .page_last {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .pagenation a {}
+main .page_wrap .review_container .photo_video_box .entire_review_box .pagenation .active {}

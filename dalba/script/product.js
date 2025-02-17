@@ -49,6 +49,8 @@ const op50ml=document.querySelector('.op50ml');
 const op100ml=document.querySelector('.op100ml');
 console.log (op50ml)
 console.log(selectOption.innerText)
+op50ml.style.display='none';
+op100ml.style.display='none';
 selectOption.addEventListener('change',function(){
     let selectedValue = selectOption.value;
     if (selectedValue == '50ml') {
