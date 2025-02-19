@@ -75,13 +75,20 @@ const minusBtn100 = document.querySelector('.minus100');//수량감소DOM
 const orderPrice100 = document.querySelector('.op_total100')//최종주문표시DOM
 let op100Num=document.querySelector('#op100ml_num');
 
+/* =========================================★★옵션 통합 총 금액 JS 진행 중 */
+const optionTotalPrice = document.querySelector('.order_price .total_price')
 let totalPrice = 0; //총 가격 저장 변수
+console.log(optionTotalPrice);
+optionTotalPrice.innerText=totalPrice;
+/* ==========================================★★★★★★★★★ */
 
 plusBtn50.addEventListener('click',()=>{
     number50++; // 수량 증가
     op50Num.value = number50; // input 값 업데이트
     let total50 = number50 * price50; // 총 금액 계산
     orderPrice50.innerText = total50.toLocaleString('ko-kr');
+    totalPrice += price50
+    optionTotalPrice.innerText = totalPrice.toLocaleString('ko-kr');
 })
 minusBtn50.addEventListener('click',()=>{
     if(number50==1){
@@ -91,6 +98,8 @@ minusBtn50.addEventListener('click',()=>{
         op50Num.value = number50;
         let total50=innerText=number50*price50;
         orderPrice50.innerText=total50.toLocaleString('ko-kr');
+        totalPrice -= price50
+        optionTotalPrice.innerText = totalPrice.toLocaleString('ko-kr');
     }
 })
 plusBtn100.addEventListener('click',()=>{
@@ -98,6 +107,8 @@ plusBtn100.addEventListener('click',()=>{
     op100Num.value = number100;
     let total100=innerText=number100*price100;
     orderPrice100.innerText=total100.toLocaleString('ko-kr');
+    totalPrice += price100
+    optionTotalPrice.innerText = totalPrice.toLocaleString('ko-kr');
 })
 minusBtn100.addEventListener('click',()=>{
     if(number100==1){
@@ -107,6 +118,8 @@ minusBtn100.addEventListener('click',()=>{
         op100Num.value = number100;
         let total100=innerText=number100*price100;
         orderPrice100.innerText=total100.toLocaleString('ko-kr');
+        totalPrice -= price100
+        optionTotalPrice.innerText = totalPrice.toLocaleString('ko-kr');
     };
 })
 
