@@ -153,7 +153,7 @@ main .pagenation .pagenation_box a {
     font-size:0.93rem; letter-spacing:-0.02em;
     display:inline-block; width:25px; height:25px; color:#ccc;
 }
-main .pagenation .active {color:#232323;}
+main .pagenation .pagenation_box .active {color:#232323;}
 /* ========공용선택자 end */
 main .page_tap {margin-bottom:80px; border-bottom:1px solid #ccc;}/* 상품페이지 탭바 */
 .page_tap_fixed { /* 상품페이지 탭바 고정 클래스 */

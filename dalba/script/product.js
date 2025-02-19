@@ -76,10 +76,10 @@ const orderPrice100 = document.querySelector('.op_total100')//최종주문표시
 let op100Num=document.querySelector('#op100ml_num');
 
 /* =========================================★★옵션 통합 총 금액 JS 진행 중 */
-const optionTotalPrice = document.querySelector('.order_price .total_price')
+/* const optionTotalPrice = document.querySelector('.order_price .total_price')
 let totalPrice = 0; //총 가격 저장 변수
 console.log(optionTotalPrice);
-optionTotalPrice.innerText=totalPrice;
+optionTotalPrice.innerText=totalPrice; */
 /* ==========================================★★★★★★★★★ */
 
 plusBtn50.addEventListener('click',()=>{
