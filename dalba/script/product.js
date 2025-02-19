@@ -146,3 +146,58 @@ shoppingBtn.addEventListener('click',(e)=>{
     cartPopup.style.display = 'none';
     document.body.style.overflow = 'auto';
 })
+
+/* 탭메뉴 상단 닿을 시 고정하기 */
+const pageTap = document.querySelector('.page_tap');
+const tapBarOffset = pageTap.offsetTop;
+
+// 스크롤 이벤트 감지
+window.addEventListener('scroll', function() {
+    if (window.scrollY >= tapBarOffset) {
+        pageTap.classList.add('page_tap_fixed'); // 고정 클래스 추가
+    } else {
+        pageTap.classList.remove('page_tap_fixed'); // 고정 클래스 제거
+    }
+});
+
+
+/* 탭메뉴 클릭시 해당 내용으로 스크롤 이동 */
+
+const tapAll = document.querySelectorAll('.page_tapbar li');
+const tapImg = document.querySelector('.page_tapbar .page_img');
+const tapReview = document.querySelector('.page_tapbar .page_review');
+const tapPageBuy = document.querySelector('.page_tapbar .page_buy');
+const tapPageQnA = document.querySelector('.page_tapbar .page_qna');
+console.log (tapImg,tapReview,tapPageBuy,tapPageQnA)
+
+const tapView = document.querySelectorAll('.tabview')
+console.log (tapView[3])
+
+function removeActiveClass() {
+    tapAll.forEach(tap => tap.classList.remove('active')); // 모든 탭에서 'active' 클래스 제거
+}
+
+tapImg.addEventListener('click',function(e){
+    e.preventDefault();
+    window.scrollTo({left:0, top:tapView[0].offsetTop - 100, behavior:'smooth'});
+    removeActiveClass();
+    tapImg.classList.add('active');
+})
+tapReview.addEventListener('click',function(e){
+    e.preventDefault();
+    window.scrollTo({left:0, top:tapView[1].offsetTop - 100, behavior:'smooth'});
+    removeActiveClass();
+    tapReview.classList.add('active');
+})
+tapPageBuy.addEventListener('click',function(e){
+    e.preventDefault();
+    window.scrollTo({left:0, top:tapView[2].offsetTop - 100, behavior:'smooth'});
+    removeActiveClass();
+    tapPageBuy.classList.add('active');
+})
+tapPageQnA.addEventListener('click',function(e){
+    e.preventDefault();
+    window.scrollTo({left:0, top:tapView[3].offsetTop - 100, behavior:'smooth'});
+    removeActiveClass();
+    tapPageQnA.classList.add('active');
+})
