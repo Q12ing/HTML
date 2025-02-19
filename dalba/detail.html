@@ -9,30 +9,75 @@
     <link rel="icon" href="./images/dalba_favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/product.css">
+    <link rel="stylesheet" href="./styles/detail.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./script/product.js" defer></script>
+    <script src="./script/common.js" defer></script>
+    <script src="./script/detail.js" defer></script>
 </head>
 <body>
     <header>
         <h1><a href="./index.html"><img src="./images/logo.png" alt="달바"></a></h1>
         <div class="nav_wrap">
             <nav>
-                <p class="full_depth">
-                    <img src="./images/full_depth.png" alt="메뉴 전체보기">
-                    <!-- 메뉴 전체보기 들어올 자리 -->
-                </p>
                 <ul>
-                    <li><a href="./sub.html">Story</a></li>
-                    <li><a href="./sub.html">Collection</a></li>
-                    <li><a href="./sub.html">Product</a></li>
-                    <li><a href="./sub.html">Home Try</a></li>
+                    <li class="menu"><a href="./sub.html">Story</a></li>
+                    <li class="menu"><a href="./sub.html">Collection</a></li>
+                    <li class="menu"><a href="./sub.html">Product</a></li>
+                    <li class="menu"><a href="./sub.html">Home Try</a></li>
                 </ul>
+                <div class="depth_menu">
+                    <div class="depth_container"> <!-- 컨텐츠 사이즈 w1400 -->
+                        <ul class="depth_category">
+                            <li class="depth_story"><a href="./sub.html">Story</a>
+                                <ul>
+                                    <li><a href="./sub.html">달바 스토리</a></li>
+                                    <li><a href="./sub.html">화이트 트러플</a></li>
+                                    <li><a href="./sub.html">제품검증과 비건</a></li>
+                                    <li><a href="./sub.html">굿즈 & 캠페인</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth_collection"><a href="./sub.html">Collection</a>
+                                <ul>
+                                    <li><a href="././sub.html">항산화 컬렉션</a></li>
+                                    <li><a href="./sub.html">비건 컬렉션</a></li>
+                                    <li><a href="./sub.html">수분·보습 컬렉션</a></li>
+                                    <li><a href="./sub.html">저자극·진정 컬렉션</a></li>
+                                </ul>
+                            </li>
+                            <li class="product"><a href="./sub.html">Product</a>
+                                <ul>
+                                    <li><a href="./sub.html">전체보기</a></li>
+                                    <li><a href="./sub.html">베스트</a></li>
+                                    <li><a href="./sub.html">달바x닥터지유마켓</a></li>
+                                    <li><a href="./sub.html">로션·크림·아이크림</a></li>
+                                    <li><a href="./sub.html">세럼·토너·앰플</a></li>
+                                    <li><a href="./sub.html">헤어·바디</a></li>
+                                    <li><a href="./sub.html">선크림</a></li>
+                                    <li><a href="./sub.html">클렌징</a></li>
+                                    <li><a href="./sub.html">디바이스</a></li>
+                                    <li><a href="./sub.html">비거너리</a></li>
+                                    <li><a href="./sub.html">마스크</a></li>
+                                    <li><a href="./sub.html">프래그런스</a></li>
+                                    <li><a href="./sub.html">메이크업</a></li>
+                                    <li><a href="./sub.html">맨즈케어</a></li>
+                                </ul>
+                            </li>
+                            <li class="depth_story"><a href="./sub.html">Home Try</a>
+                                <ul>
+                                    <li><a href="./sub.html">홈트라이</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="depth_bnr">
+                            <img src="./images/tab_bnr.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
             </nav>
             <div class="m_nav">
-                <a href="#"><img src="./images/wish.png" alt="위시리스트"></a>
+                <a href=""><img src="./images/wish.png" alt="위시리스트"></a>
                 <a href="#"><img src="./images/search.png" alt="검색하기"></a>
                 <a href="#"><img src="./images/mypage.png" alt="마이페이지"></a>
                 <a href="#"><img src="./images/cart.png" alt="장바구니"></a>
