@@ -43,10 +43,10 @@ header .contact:hover {background:#5484f3;}
 /* =================================================================2. profile */
 .wrap #profile {background:#F0F0F0;}
 .wrap #profile .pf_top {width:max-content; margin:0 auto; display:flex; flex-flow:row nowrap; align-items:center;}
-.wrap #profile .pf_top .pic_info {display:flex; flex-flow:row nowrap; align-items:flex-end; margin-top:180px;}
+.wrap #profile .pf_top .pic_info {display:flex; flex-flow:row nowrap; align-items:flex-end; margin-top:160px;}
 .wrap #profile .pf_top .pic_info .my_pic {width:360px; height:320px;}
 .wrap #profile .pf_top .pic_info .my_pic img {width:100%;}
-.wrap #profile .pf_top .pic_info .my_info {margin-left:40px; padding-bottom:40px;}
+.wrap #profile .pf_top .pic_info .my_info {margin-left:40px; padding-bottom:15px;}
 .wrap #profile .pf_top .pic_info .my_info .mytag  {}
 .wrap #profile .pf_top .pic_info .my_info h2 {
     font-size:2.25rem; font-weight:800; line-height:1.5; letter-spacing:-0.02em;
@@ -85,16 +85,17 @@ header .contact:hover {background:#5484f3;}
     display:inline-block; width:50%; height:100%; background:#3c74f2; border-radius:20px;
     position:relative; bottom:5px;
 }
-.wrap #profile .pf_btm .skill ul li:nth-child(1) .level .level_bar {/* 포토샵 */ width:95%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(2) .level .level_bar {/* 깃허브 */ width:35%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(3) .level .level_bar {/* 일러스트 */ width:95%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(4) .level .level_bar {/* HTML5 */ width:50%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(5) .level .level_bar {/* 엑셀 */ width:70%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(6) .level .level_bar {/* CSS3 */ width:50%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(7) .level .level_bar {/* Figma */ width:60%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(8) .level .level_bar {/* Javascript */ width:40%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(9) .level .level_bar {/* Notion */ width:50%;}
-.wrap #profile .pf_btm .skill ul li:nth-child(10) .level .level_bar {/* Jquery */ width:20%;}
+.wrap #profile .pf_btm .skill ul > li .level .level_bar {width:0%; opacity: 0; transition:width 0.8s ease, opacity 0.8s ease;} /* 공용 */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(1) .level .level_bar {width:90%; animation:val90 1s ease 0.8s both;} 포토샵 */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(2) .level .level_bar {width:30%; animation:val30 1s ease 1s both;} 깃허브 */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(3) .level .level_bar {width:90%; animation:val90 1s ease 1.2s both;} 일러스트 */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(4) .level .level_bar {width:50%; animation:val50 1s ease 1.4s both;} HTML5 */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(5) .level .level_bar {width:70%; animation:val70 1s ease 1.6s both;} 엑셀 */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(6) .level .level_bar {width:50%; animation:val50 1s ease 1.8s both;} CSS3 */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(7) .level .level_bar {width:70%; animation:val70 1s ease 2s both;} Figma */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(8) .level .level_bar {width:30%; animation:val30 1s 2.2s ease both;} Javascript */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(9) .level .level_bar {width:50%; animation:val50 1s ease 2.4s both;} Notion */
+/* .wrap #profile .pf_btm .skill ul li:nth-child(10) .level .level_bar {width:30%; animation:val30 1s ease 2.6s both;} Jquery */
 .wrap #profile .pf_btm .license {margin:0 35px;}
 .wrap #profile .pf_btm .license h3 {}
 .wrap #profile .pf_btm .license p {font-size:0.94rem; letter-spacing:-0.02em; margin-bottom:17px;}
@@ -132,7 +133,7 @@ header .contact:hover {background:#5484f3;}
 }
 .wrap #education .edu .edu_top li::after {
     display:block; content:''; left:0; bottom:0; height:40px; width:1px; background:rgba(255,255,255,0.5);
-    margin:13px 0 23px;
+    margin:13px 0 23px; position:relative; z-index:300;
 }
 .wrap #education .edu .edu_top .edu_up {}
 .wrap #education .edu .edu_top .edu_up::after {height:90px;}
@@ -151,9 +152,12 @@ header .contact:hover {background:#5484f3;}
 .wrap #education .edu .edu_num li:nth-child(5) {color:#79BBFF;}
 .wrap #education .edu .edu_num li:nth-child(6) {color:#2590FF;}
 .wrap #education .edu .edu_num li:nth-child(7) {color:#306DF5;}
-.wrap #education .edu .edu_line {
-    width:100hv; height:3px;
-    background:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);}
+.wrap #education .edu .edu_line {width:100%; text-align:center;}
+.wrap #education .edu .edu_line .bar {
+    width:0%; opacity:1; height:3px; display:inline-block;
+    background:radial-gradient(circle, rgba(255,255,255,1) 0%, transparent 100%);
+}
+.wrap #education .edu .edu_line .active {width:100%; opacity:1;}
 .wrap #education .edu .edu_btm {
     width:max-content; margin:0 auto; display:flex;
     position:relative; left:50px;
@@ -185,7 +189,7 @@ header .contact:hover {background:#5484f3;}
 }
 .wrap .webR .web_bnr .center {position:absolute; z-index:500; top:30%; left:50%; transform:translateX(-50%);}
 .wrap .webR .web_bnr .center .labtop {width:610px;}
-.wrap .webR .web_bnr .center .labtop img {width:100%;}
+.wrap .webR .web_bnr .center .labtop img {width:100%; position:relative; left:-100px;}
 .wrap .webR .web_bnr a {
     font-size:1.14rem; margin-top:30px;
     display:inline-block; background:#306DF5; color:#fff;
@@ -276,7 +280,7 @@ header .contact:hover {background:#5484f3;}
 }
 .wrap .webL .web_bnr .center {position:absolute; z-index:500; top:30%; left:50%; transform:translateX(-50%);}
 .wrap .webL .web_bnr .center .labtop {width:610px;}
-.wrap .webL .web_bnr .center .labtop img {width:100%;}
+.wrap .webL .web_bnr .center .labtop img {width:100%;position:relative; left:-100px;}
 .wrap .webL .web_bnr a {
     font-size:1.14rem; margin-top:30px;
     display:inline-block; background:#306DF5; color:#fff; transition:all 0.3s;
@@ -312,18 +316,24 @@ header .contact:hover {background:#5484f3;}
 .wrap #graphic .grp_contents .left .design1 {width:100%; margin-bottom:10px; border-radius:20px;}
 .wrap #graphic .grp_contents .left .design1 .swiper-wrapper {transition-timing-function:linear;}
 .wrap #graphic .grp_contents .left .design1 .swiper-slide {}
-.wrap #graphic .grp_contents .left .design1 .swiper-slide img {width:100%;}
+.wrap #graphic .grp_contents .left .design1 .swiper-slide img {}
 .wrap #graphic .grp_contents .left .design2 {width:100%; height:350px; border-radius:20px;}
 .wrap #graphic .grp_contents .left .design2 .swiper-wrapper {transition-timing-function:linear;}
 .wrap #graphic .grp_contents .left .design2 .swiper-slide {}
-.wrap #graphic .grp_contents .left .design2 .swiper-slide img {width:100%;}
+.wrap #graphic .grp_contents .left .design2 .swiper-slide img {}
 .wrap #graphic .grp_contents .design3_set {width:400px; position:relative;}
 .wrap #graphic .grp_contents .design3_set .design3 {width:400px; height:700px; border-radius:20px; margin-left:50px;}
 .wrap #graphic .grp_contents .design3_set .design3 .swiper-wrapper {transition-timing-function:linear;}
 .wrap #graphic .grp_contents .design3_set .design3 .swiper-slide {}
-.wrap #graphic .grp_contents .design3_set .design3 .swiper-slide img {width:100%;}
+.wrap #graphic .grp_contents .design3_set .design3 .swiper-slide img {}
 .wrap #graphic .grp_contents .design3_set .swiper-pagination {width:100%; bottom:-30px; left:50px;}
-.wrap #graphic .grp_contents img {cursor:pointer;}
+/* 이미지 호버 공통 선택자 */
+.wrap #graphic .grp_contents .left .design1 .swiper-slide img,
+.wrap #graphic .grp_contents .left .design2 .swiper-slide img,
+.wrap #graphic .grp_contents .design3_set .design3 .swiper-slide img {width:100%; cursor:pointer; transition:transform 0.5s;}
+.wrap #graphic .grp_contents .left .design1 .swiper-slide img:hover,
+.wrap #graphic .grp_contents .left .design2 .swiper-slide img:hover,
+.wrap #graphic .grp_contents .design3_set .design3 .swiper-slide img:hover {transform:rotate(3deg)}
 /* 클릭시 디자인 프로젝트 팝업 */
 .wrap #graphic .grp_contents .popup_bg {
     position:fixed; left:0; top:0;
@@ -355,7 +365,25 @@ header .contact:hover {background:#5484f3;}
     100% {transform:translateY(0px)}
 }
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(0.95); }
-    100% { transform: scale(1); }
+    0% {transform:scale(1);}
+    40% {transform:scale(0.95);}
+    100% {transform:scale(1);}
 }
+
+/* 공용선택자+스크롤트리거로 대체 완료 */
+/* @keyframes val30 {
+    0% {width:0%;}
+    100% {width:30%;}
+}
+@keyframes val50 {
+    0% {width:0%;}
+    100% {width:50%;}
+}
+@keyframes val70 {
+    0% {width:0%;}
+    100% {width:70%;}
+}
+@keyframes val90 {
+    0% {width:0%;}
+    100% {width:90%;}
+} */
