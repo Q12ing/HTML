@@ -10,13 +10,17 @@ const mainSwiper = new Swiper('.main_swiper',{
 /* 1열 자동차 스와이퍼 */
 const allModelsSwiper = new Swiper('.all_models_swiper',{
     loop:true,
-    slidesPerView:1.8,
     spaceBetween:30,
     centeredSlides:true,
     pagination: {
         el: ".models_wrap .swiper-pagination",
         clickable:true,
     },
+    breakpoints:{
+        1000:{slidesPerView:1.8,},
+        440:{slidesPerView:1.3,},
+        0:{slidesPerView:1},
+        }
 });
 
 /* 1열 탭메뉴 active 클래스 이동 */
@@ -68,10 +72,10 @@ $('.id4_wrap .thumb li').click(function(e){
 
 /* 5열 이미지 메뉴 클릭시 섬네일 변경 반응 */
 const thumbnail = document.querySelectorAll('.id4_wrap .thumb li a img');
-const bigImage = document.querySelector('.id4_wrap .img_box img');
+const bigImage = document.querySelector('.id4_wrap .img_box');
 
 function bigSrc(num) {
-    bigImage.src = `./images/ID4_b${num}.jpg`; // 이미지 변경
+    bigImage.style.backgroundImage = `url("./images/ID4_b${num}.jpg")`;  // 이미지 변경
 }
 
 // 모든 썸네일에 이벤트 리스너 추가 (반복문 사용)
@@ -96,7 +100,11 @@ const keyFeatures = new Swiper('.key_features',{
     navigation:{
         nextEl:'.option_swiper_box .menu1 .next', //다음 버튼(CSS선택자 작성방식으로)
         prevEl:'.option_swiper_box .menu1 .prev', //이전 버튼
-    }
+    },
+    breakpoints:{
+        1599:{slidesPerView:3,},
+        440:{slidesPerView:2,},
+        }
 });
 const driveAssist = new Swiper('.drive_assist',{
     loop:true,
@@ -105,7 +113,11 @@ const driveAssist = new Swiper('.drive_assist',{
     navigation:{
         nextEl:'.option_swiper_box .menu2 .next', //다음 버튼(CSS선택자 작성방식으로)
         prevEl:'.option_swiper_box .menu2 .prev', //이전 버튼
-    }
+    },
+    breakpoints:{
+        1599:{slidesPerView:3,},
+        440:{slidesPerView:2,},
+        }
 });
 const careSystem = new Swiper('.care_system',{
     loop:true,
@@ -114,7 +126,11 @@ const careSystem = new Swiper('.care_system',{
     navigation:{
         nextEl:'.option_swiper_box .menu3 .next', //다음 버튼(CSS선택자 작성방식으로)
         prevEl:'.option_swiper_box .menu3 .prev', //이전 버튼
-    }
+    },
+    breakpoints:{
+        1599:{slidesPerView:3,},
+        440:{slidesPerView:2,},
+        }
 });
 
 /* 6열 탭메뉴 클릭시 해당 스와이퍼 보이기 */

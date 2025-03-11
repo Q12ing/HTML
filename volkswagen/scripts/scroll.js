@@ -53,13 +53,13 @@ gsap.to(carPoint, {
         trigger:'.golf8_wrap .black_point li',
         start: "top 80%",
         end: "top 0%",
-        markers:true,
+        markers:false,
         onEnter:() => {
             gsap.to(carPoint,{
                 delay:1,
                 opacity:1,
-                y:100,
-                duration:2,
+                y:50,
+                duration:0.5,
                 stagger:0.2, // ★ 순차적으로 등장 ★
             });
         },

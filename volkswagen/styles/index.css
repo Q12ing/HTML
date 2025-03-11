@@ -11,7 +11,7 @@ main .index_wrap .container .tab_menu li {display:inline-block;}
 main .index_wrap .container .tab_menu li a {color:#ccc; display:inline-block; position:relative; bottom:-1px; letter-spacing:-0.02em; padding:0 25px 10px; border-bottom:2px solid rgba(255,255,255,0);}
 main .index_wrap .container .tab_menu li.active a {color:#fff; font-weight:600; border-bottom-color:rgba(255,255,255,1)}
 .more {
-    font-size:0.94rem; line-height:1.5; letter-spacing:-0.02em; color:#fff;
+    font-size:0.94rem; line-height:1.5; letter-spacing:-0.02em; color:#fff; display:inline-block;
 }
 .more img {margin-left:5px; position:relative; top:4px;}
 .more:hover {
@@ -39,7 +39,7 @@ main .main_bnr .main_swiper .slide2 {
     background-image:url(../images/main_bnr_002.jpg);
 }
 main .main_bnr .main_swiper .swiper-slide .container {max-width:1600px; min-width:440px; height:100%; margin:0 auto; display:flex; align-items:flex-end;}
-main .main_bnr .main_swiper .swiper-slide .container .bnr_txt {margin-bottom:55px; margin-bottom:150px;}
+main .main_bnr .main_swiper .swiper-slide .container .bnr_txt {margin-bottom:150px;}
 main .main_bnr .main_swiper .swiper-slide .container .bnr_txt p {color:#fff;}
 main .main_bnr .main_swiper .swiper-slide .container .bnr_txt .sub {font-weight:300; letter-spacing:-0.02em;}
 main .main_bnr .main_swiper .swiper-slide .container .bnr_txt .main {font-size:4.0rem; letter-spacing:-0.02em; margin:22px 0 55px;}
@@ -71,7 +71,7 @@ main .models_wrap .all_models_swiper {max-width:1920px; min-width:440px; height:
 main .models_wrap .all_models_swiper .swiper-slide {/* 슬라이드 공통선택자 */
     background:#1f1f1f;
 }
-main .models_wrap .all_models_swiper .swiper-slide {padding:40px 30px;}
+main .models_wrap .all_models_swiper .swiper-slide {padding:40px 30px 55px 30px;}
 main .models_wrap .all_models_swiper .swiper-slide .name {font-size:1.5rem; letter-spacing:-0.02em; color:#fff;}
 main .models_wrap .all_models_swiper .swiper-slide .car_img {}
 main .models_wrap .all_models_swiper .swiper-slide .car_img li {}
@@ -103,7 +103,7 @@ main .service_wrap {
     background-image:url(../images/bg_001.jpg);
     background-position:center;
     background-size:cover; padding:150px 0;
-}1
+}
 main .service_wrap .container {}
 main .service_wrap .container .title {}
 main .service_wrap .container .title .title_top {}
@@ -127,9 +127,7 @@ main .service_wrap .container .service_box li .top_img::after {
 main .service_wrap .container .service_box li .top_img a {display:inline-block; width:100%; height:100%; position:relative; z-index:102;}
 main .service_wrap .container .service_box li .top_img a img {}
 main .service_wrap .container .service_box li .txt_btn {position:relative; padding:25px;}
-main .service_wrap .container .service_box li .txt_btn .btm_txt {
-    height:180px;
-}
+main .service_wrap .container .service_box li .txt_btn .btm_txt {height:180px;}
 main .service_wrap .container .service_box li .txt_btn .btm_txt .title {
     font-size:1.25rem; font-weight:500; letter-spacing:-0.02em; margin-bottom:20px; display:inline-block;
 }
@@ -164,22 +162,24 @@ main .golf8_wrap {
     background-size:cover;
     background-repeat:no-repeat;
     position:relative;
+    padding:240px 0;
 }
 main .golf8_wrap .container {
-    overflow:hidden; height:900px;
+    overflow:hidden;
     
 }
 main .golf8_wrap .container .white_name,
 main .golf8_wrap .container .black_point {/* 양쪽섹션 공통선택자 */
     height:100%; width:50%;
 }
-main .golf8_wrap .container .white_name {float:left; padding:300px 0 0 80px;}
+main .golf8_wrap .container .white_name {float:left; padding-left:70px; padding-top:15px;}
 main .golf8_wrap .container .white_name .car_name {font-size:4.0rem; font-weight:700; letter-spacing:-0.02em; margin:20px 0 20px;}
 main .golf8_wrap .container .white_name p:first-child {position:relative; left:-25px;}
 main .golf8_wrap .container .white_name p {font-size:0.94rem; line-height:1.5; letter-spacing:-0.02em;}
+main .golf8_wrap .container .white_name .txt {}
 main .golf8_wrap .container .white_name .more {color:#0c0c0c; display:block; margin-top:75px;}
 main .golf8_wrap .container .white_name .more img {}
-main .golf8_wrap .container .black_point {float:right; padding:170px 0 0 200px;}
+main .golf8_wrap .container .black_point {float:right; padding-left:200px; position:relative; top:-50px;}
 main .golf8_wrap .container .black_point * {line-height:1.5; letter-spacing:-0.02em;}
 main .golf8_wrap .container .black_point li {margin-bottom:90px; color:#ccc}
 main .golf8_wrap .container .black_point li:last-child {margin-bottom:0px;}
@@ -188,13 +188,13 @@ main .golf8_wrap .container .black_point li::before {
     border-radius:20px; margin-right:10px; position:relative; bottom:2px;
 }
 main .golf8_wrap .black_point li em {font-weight:500; color:#fff;}
-main .golf8_wrap .car {position:absolute; z-index:600; left:50%; top:70%; transform:translateX(-50%);}
+main .golf8_wrap .car {position:absolute; width:285px; z-index:600; left:50%; top:75%; transform:translateX(-50%);}
 main .golf8_wrap .car img {width:100%;}
 /* ★★★★★ 4열 mini bnr ★★★★★ */
 main .mini_bnr_wrap {background:#0C0C0C; padding:150px 0;}
-main .mini_bnr_wrap .container {display:flex; gap:30px;}
+main .mini_bnr_wrap .container {display:flex; justify-content:space-between;}
 main .mini_bnr_wrap .container div[class^=bnr] {/* 공통선택자 */
-    flex:1; max-width:calc(50% - 15px); position:relative;
+    width:calc((100% - 30px) / 2); position:relative;
 }
 main .mini_bnr_wrap .container div[class^=bnr]::before {
     display:block; content:''; width:100%; height:100%; background:rgba(0,0,0,0.5);
@@ -203,12 +203,11 @@ main .mini_bnr_wrap .container div[class^=bnr]::before {
 }
 main .mini_bnr_wrap .container .bnr1,
 main .mini_bnr_wrap .container .bnr2 {
-    padding:60px 0 100px 60px;
+    padding:60px 60px 100px 60px;
     background-position:center;
     background-size:cover;
 }
 main .mini_bnr_wrap .container .bnr1 {
-    margin-right:35px;
     background-image:url(../images/mini_bnr_001.jpg);
 }
 main .mini_bnr_wrap .container .bnr2 {
@@ -223,10 +222,10 @@ main .mini_bnr_wrap .container div[class^=bnr] .txt_box .title {
     margin-bottom:30px;
 }
 main .mini_bnr_wrap .container div[class^=bnr] .txt_box .txt {
-    height:80px;
+    height:70px;
     font-size:0.88rem; line-height:1.5; letter-spacing:-0.02em;
 }
-main .mini_bnr_wrap .container div[class^=bnr] .txt_box .more {}
+main .mini_bnr_wrap .container div[class^=bnr] .txt_box .more {margin-top:30px;}
 main .mini_bnr_wrap .container div[class^=bnr] .txt_box .more img {}
 /* ★★★★★ 5열 ID4 홍보 섹션 ★★★★★ */
 main .id4_wrap {
@@ -234,16 +233,21 @@ main .id4_wrap {
     background-position:center; 
     background-size:cover;
     background-repeat:no-repeat;
+    padding:130px 0;
 }
-main .id4_wrap .container {width:100%; max-width:1920px; padding:130px 0; display:flex;}
-main .id4_wrap .container .img_box {flex:1;}
-main .id4_wrap .container .img_box img {width:100%;}
-main .id4_wrap .container .txt_box {flex:1; padding-left:130px; padding-top:20px;}
+main .id4_wrap .container {width:100%; max-width:1920px; min-width:440px; display:flex;}
+main .id4_wrap .container .img_box {
+    background-image:url(../images/ID4_b1.jpg);
+    background-position:center; 
+    background-size:cover;
+    width:50%
+}
+main .id4_wrap .container .txt_box {width:50%; padding-left:130px; padding-top:20px;}
 main .id4_wrap .container .txt_box > * {color:#fff;}
 main .id4_wrap .container .txt_box .sub {font-weight:500; letter-spacing:-0.02em;}
 main .id4_wrap .container .txt_box .car_name {font-size:3.25rem; margin:20px 0 25px; font-weight:700; letter-spacing:-0.02em;}
 main .id4_wrap .container .txt_box .info {color:#f7f7f7; font-size:0.94rem; line-height:1.5; letter-spacing:-0.02em;}
-main .id4_wrap .container .txt_box .more {display:inline-block; margin:75px 0 125px;}
+main .id4_wrap .container .txt_box .more {margin:75px 0 125px;}
 main .id4_wrap .container .txt_box .more img {}
 main .id4_wrap .container .txt_box .thumb {}
 main .id4_wrap .container .txt_box .thumb li {float:left; margin-right:20px;}
@@ -278,17 +282,17 @@ main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper .sw
 main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper .swiper-slide .txt_box .title a {
     font-size:1.25rem; font-weight:500; letter-spacing:-0.02em; color:#fff;
 }
-main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper .swiper-slide .txt_box .info {height:80px;}
+main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper .swiper-slide .txt_box .info {height:90px;}
 main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper .swiper-slide .txt_box .info a {
     font-size:0.94rem; font-weight:300; line-height:1.5; color:#F7F7F7;
 }
-main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button {width:100%; position:absolute; top:180px; left:0;}
+main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button {width:100%; position:absolute; top:160px; left:0;}
 main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .next {float:right; position:relative; right:-50px; cursor:pointer;}
 main .car_option_wrap .container .option_swiper_box div[class^=menu] .swiper_button .prev {float:left; position:relative; right:50px; cursor:pointer;}
 /* =================== 공용선택자 끝*/
-main .car_option_wrap .container .option_swiper_box .menu1 .key_features {width:100%; height:max-content;}
-main .car_option_wrap .container .option_swiper_box .menu2 {width:100%; height:max-content; display:none;}
-main .car_option_wrap .container .option_swiper_box .menu3 {width:100%; height:max-content; display:none;}
+main .car_option_wrap .container .option_swiper_box .menu1 .key_features {width:100%; min-width:440px; height:max-content;}
+main .car_option_wrap .container .option_swiper_box .menu2 {width:100%; min-width:440px; height:max-content; display:none;}
+main .car_option_wrap .container .option_swiper_box .menu3 {width:100%; min-width:440px; height:max-content; display:none;}
 /* ★★★★★ 7열 앱, 매장 띠배너 ★★★★★ */
 main .line_bnr_wrap {
     background-image:url(../images/bg_004.jpg);
@@ -306,6 +310,6 @@ main .line_bnr_wrap .container > div {/* 공용선택자 */
 }
 main .line_bnr_wrap .container > div .title {color:#fff; float:left; line-height:1.5;}
 main .line_bnr_wrap .container > div .btn {float:right;}
-main .line_bnr_wrap .container > div .btn .more {display:inline-block; padding:0 3px; width:110px; padding-bottom:7px; border-bottom:1px solid #fff;}
+main .line_bnr_wrap .container > div .btn .more {padding:0 3px; width:110px; padding-bottom:7px; border-bottom:1px solid #fff;}
 main .line_bnr_wrap .container > div .btn .more img {float:right;}
 main .line_bnr_wrap .container .app .btn a:first-child {margin-right:20px;}
