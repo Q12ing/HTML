@@ -147,7 +147,7 @@ menuTap.forEach((menu, index) => {
     });
 });
 
-/* 전체 a태그 새로고침 안되게 하기 */
+/* 전체 a태그 새로고침 안되게 하기-추후 common.js 파일로 이동 예정 */
 const aTag=document.querySelectorAll('body a')
 console.log(aTag[1]);
 
