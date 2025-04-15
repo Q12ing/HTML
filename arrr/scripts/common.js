@@ -14,8 +14,10 @@ groupList.addEventListener('mouseleave',function(){
 const aTag=document.querySelectorAll('body a')
 console.log(aTag[1]);
 
-aTag.forEach(item => {
-    item.addEventListener('click',function(e){
-        e.preventDefault();
-    })
+document.querySelectorAll('a').forEach(item => {
+    item.addEventListener('click', function(e){
+        if (item.getAttribute('href') === '#') {
+            e.preventDefault();
+        }
+    });
 });
